@@ -1,0 +1,1005 @@
+Please enter your plaintext: I like computer class
+
+Please enter your key: Security
+
+PlainText: I like computer class
+PlainText Hex and Binary Representations:
+Hex: 49 20 6c 69 6b 65 20 63 6f 6d 70 75 74 65 72 20 63 6c 61 73 73
+Binary: 01001001 00100000 01101100 01101001 01101011 01100101 00100000 01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 00100000 01100011 01101100 01100001 01110011 01110011
+
+Initial Key: Security
+Initial Key Hex and Binary Representations:
+Hex: 53 65 63 75 72 69 74 79
+Binary: 01010011 01100101 01100011 01110101 01110010 01101001 01110100 01111001
+
+PlainText Binary: 0100 1001 0010 0000 0110 1100 0110 1001 0110 1011 0110 0101 0010 0000 0110 0011 | 0110 1111 0110 1101 0111 0000 0111 0101 0111 0100 0110 0101 0111 0010 0010 0000 | 0110 0011 0110 1100 0110 0001 0111 0011 0111 0011 0000 0000 0000 0000 0000 0000
+Round 01 Key: 111100 001011 011001 101110 011101 010010 100000 110000
+Round 02 Key: 111100 001011 111011 110110 100000 101100 001010 000101
+Round 03 Key: 111101 001111 011001 110010 110100 100000 011110 000001
+Round 04 Key: 111001 101101 011101 110110 100110 100000 001100 001001
+Round 05 Key: 111011 101101 001101 010111 010100 100111 001100 000000
+Round 06 Key: 001011 111101 001101 111011 011100 000010 000100 101000
+Round 07 Key: 101011 110101 000111 111011 111000 000011 100000 001010
+Round 08 Key: 101111 110100 101111 011001 011001 000011 001000 111010
+Round 09 Key: 001111 110101 100111 011011 100010 101100 010100 000001
+Round 10 Key: 001111 110110 100111 001101 010010 100100 011100 000100
+Round 11 Key: 000110 110110 110110 011101 110110 000100 000110 001000
+Round 12 Key: 010111 010010 110110 111101 110000 000101 001000 001001
+Round 13 Key: 110101 111010 110010 101101 110100 100011 001000 101000
+Round 14 Key: 110110 111010 111010 100110 101100 000001 101100 101000
+Round 15 Key: 111110 001011 111010 101110 000100 000011 101000 110010
+Round 16 Key: 111000 011011 111010 100110 100010 000100 000111 000101
+
+
+For block 1...
+Round 1...
+S-Box 1 input: 111100
+S-Box 1 output: 0101
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 000110
+S-Box 3 output: 1110
+S-Box 4 input: 010010
+S-Box 4 output: 0010
+S-Box 5 input: 011110
+S-Box 5 output: 1001
+S-Box 6 input: 101001
+S-Box 6 output: 1001
+S-Box 7 input: 010010
+S-Box 7 output: 1100
+S-Box 8 input: 010000
+S-Box 8 output: 1010
+CipherText after Round 01: 00FE1D90 C45BC5BE
+
+
+Round 2...
+S-Box 1 input: 100100
+S-Box 1 output: 1110
+S-Box 2 input: 000011
+S-Box 2 output: 1101
+S-Box 3 input: 110000
+S-Box 3 output: 1011
+S-Box 4 input: 000001
+S-Box 4 output: 1101
+S-Box 5 input: 011000
+S-Box 5 output: 1101
+S-Box 6 input: 100111
+S-Box 6 output: 1100
+S-Box 7 input: 111101
+S-Box 7 output: 0011
+S-Box 8 input: 111000
+S-Box 8 output: 1111
+CipherText after Round 02: C45BC5BE BF70C2EC
+
+
+Round 3...
+S-Box 1 input: 101010
+S-Box 1 output: 0110
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 110111
+S-Box 3 output: 0011
+S-Box 4 input: 010011
+S-Box 4 output: 0111
+S-Box 5 input: 101100
+S-Box 5 output: 0111
+S-Box 6 input: 100101
+S-Box 6 output: 0010
+S-Box 7 input: 000011
+S-Box 7 output: 0000
+S-Box 8 input: 011000
+S-Box 8 output: 0101
+CipherText after Round 03: BF70C2EC 20371F1A
+
+
+Round 4...
+S-Box 1 input: 111101
+S-Box 1 output: 0110
+S-Box 2 input: 101101
+S-Box 2 output: 0100
+S-Box 3 input: 011011
+S-Box 3 output: 1011
+S-Box 4 input: 011000
+S-Box 4 output: 1011
+S-Box 5 input: 000101
+S-Box 5 output: 0010
+S-Box 6 input: 011110
+S-Box 6 output: 1011
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 111101
+S-Box 8 output: 0110
+CipherText after Round 04: 20371F1A 29026518
+
+
+Round 5...
+S-Box 1 input: 111110
+S-Box 1 output: 0000
+S-Box 2 input: 111111
+S-Box 2 output: 1001
+S-Box 3 input: 101101
+S-Box 3 output: 1000
+S-Box 4 input: 010011
+S-Box 4 output: 0111
+S-Box 5 input: 011000
+S-Box 5 output: 1101
+S-Box 6 input: 101101
+S-Box 6 output: 1111
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 110000
+S-Box 8 output: 0000
+CipherText after Round 05: 29026518 934B6A12
+
+
+Round 6...
+S-Box 1 input: 011001
+S-Box 1 output: 1001
+S-Box 2 input: 011011
+S-Box 2 output: 1001
+S-Box 3 input: 100100
+S-Box 3 output: 0100
+S-Box 4 input: 101101
+S-Box 4 output: 1101
+S-Box 5 input: 110001
+S-Box 5 output: 0110
+S-Box 6 input: 010110
+S-Box 6 output: 0100
+S-Box 7 input: 000110
+S-Box 7 output: 1110
+S-Box 8 input: 001101
+S-Box 8 output: 0111
+CipherText after Round 06: 934B6A12 A99D39F3
+
+
+Round 7...
+S-Box 1 input: 011110
+S-Box 1 output: 0111
+S-Box 2 input: 100110
+S-Box 2 output: 1011
+S-Box 3 input: 110100
+S-Box 3 output: 0010
+S-Box 4 input: 000001
+S-Box 4 output: 1101
+S-Box 5 input: 011111
+S-Box 5 output: 0110
+S-Box 6 input: 110000
+S-Box 6 output: 0111
+S-Box 7 input: 011110
+S-Box 7 output: 0001
+S-Box 8 input: 101101
+S-Box 8 output: 1000
+CipherText after Round 07: A99D39F3 596798DC
+
+
+Round 8...
+S-Box 1 input: 100100
+S-Box 1 output: 1110
+S-Box 2 input: 000110
+S-Box 2 output: 1110
+S-Box 3 input: 000011
+S-Box 3 output: 0111
+S-Box 4 input: 010110
+S-Box 4 output: 0101
+S-Box 5 input: 101010
+S-Box 5 output: 1101
+S-Box 6 input: 110010
+S-Box 6 output: 0000
+S-Box 7 input: 010011
+S-Box 7 output: 0011
+S-Box 8 input: 000010
+S-Box 8 output: 0010
+CipherText after Round 08: 596798DC 4E12AFE7
+
+
+Round 9...
+S-Box 1 input: 100110
+S-Box 1 output: 1000
+S-Box 2 input: 101001
+S-Box 2 output: 0011
+S-Box 3 input: 100101
+S-Box 3 output: 1101
+S-Box 4 input: 111110
+S-Box 4 output: 0100
+S-Box 5 input: 110111
+S-Box 5 output: 1001
+S-Box 6 input: 110011
+S-Box 6 output: 1110
+S-Box 7 input: 101000
+S-Box 7 output: 1100
+S-Box 8 input: 001111
+S-Box 8 output: 0100
+CipherText after Round 09: 4E12AFE7 2CD6C9F5
+
+
+Round 10...
+S-Box 1 input: 101010
+S-Box 1 output: 0110
+S-Box 2 input: 101111
+S-Box 2 output: 0010
+S-Box 3 input: 111101
+S-Box 3 output: 0010
+S-Box 4 input: 100000
+S-Box 4 output: 1010
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 110111
+S-Box 6 output: 0111
+S-Box 7 input: 100010
+S-Box 7 output: 0100
+S-Box 8 input: 101110
+S-Box 8 output: 0010
+CipherText after Round 10: 2CD6C9F5 2E640D2B
+
+
+Round 11...
+S-Box 1 input: 100011
+S-Box 1 output: 1100
+S-Box 2 input: 101010
+S-Box 2 output: 0100
+S-Box 3 input: 111010
+S-Box 3 output: 1010
+S-Box 4 input: 010101
+S-Box 4 output: 0010
+S-Box 5 input: 110111
+S-Box 5 output: 1001
+S-Box 6 input: 011110
+S-Box 6 output: 1011
+S-Box 7 input: 100011
+S-Box 7 output: 1011
+S-Box 8 input: 011110
+S-Box 8 output: 0111
+CipherText after Round 11: 2E640D2B 1F3464C0
+
+
+Round 12...
+S-Box 1 input: 010100
+S-Box 1 output: 0110
+S-Box 2 input: 101100
+S-Box 2 output: 1101
+S-Box 3 input: 010000
+S-Box 3 output: 0001
+S-Box 4 input: 010101
+S-Box 4 output: 0010
+S-Box 5 input: 111100
+S-Box 5 output: 0000
+S-Box 6 input: 001100
+S-Box 6 output: 0110
+S-Box 7 input: 010000
+S-Box 7 output: 0011
+S-Box 8 input: 001001
+S-Box 8 output: 1010
+CipherText after Round 12: 1F3464C0 200ECB33
+
+
+Round 13...
+S-Box 1 input: 010001
+S-Box 1 output: 1010
+S-Box 2 input: 111010
+S-Box 2 output: 0011
+S-Box 3 input: 110011
+S-Box 3 output: 1111
+S-Box 4 input: 110000
+S-Box 4 output: 1111
+S-Box 5 input: 101101
+S-Box 5 output: 0010
+S-Box 6 input: 110101
+S-Box 6 output: 0001
+S-Box 7 input: 101110
+S-Box 7 output: 1110
+S-Box 8 input: 001110
+S-Box 8 output: 0001
+CipherText after Round 13: 200ECB33 DBE51B05
+
+
+Round 14...
+S-Box 1 input: 001101
+S-Box 1 output: 1101
+S-Box 2 input: 001101
+S-Box 2 output: 1000
+S-Box 3 input: 000110
+S-Box 3 output: 1110
+S-Box 4 input: 101100
+S-Box 4 output: 0111
+S-Box 5 input: 001111
+S-Box 5 output: 0001
+S-Box 6 input: 110111
+S-Box 6 output: 0111
+S-Box 7 input: 001100
+S-Box 7 output: 1000
+S-Box 8 input: 100011
+S-Box 8 output: 0001
+CipherText after Round 14: DBE51B05 80E7723C
+
+
+Round 15...
+S-Box 1 input: 101110
+S-Box 1 output: 1011
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 100110
+S-Box 3 output: 1001
+S-Box 4 input: 100000
+S-Box 4 output: 1010
+S-Box 5 input: 101010
+S-Box 5 output: 1101
+S-Box 6 input: 100111
+S-Box 6 output: 1100
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 001011
+S-Box 8 output: 0011
+CipherText after Round 15: 80E7723C AC3B544F
+
+
+Round 16...
+S-Box 1 input: 001101
+S-Box 1 output: 1101
+S-Box 2 input: 000011
+S-Box 2 output: 1101
+S-Box 3 input: 111101
+S-Box 3 output: 0010
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 001000
+S-Box 5 output: 0111
+S-Box 6 input: 101100
+S-Box 6 output: 1100
+S-Box 7 input: 001110
+S-Box 7 output: 1101
+S-Box 8 input: 011010
+S-Box 8 output: 0000
+CipherText after Round 16: 327BB2A3 AC3B544F
+
+
+
+For block 2...
+Round 1...
+S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 000110
+S-Box 3 output: 1110
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 111101
+S-Box 5 output: 0101
+S-Box 6 input: 010100
+S-Box 6 output: 0011
+S-Box 7 input: 001000
+S-Box 7 output: 1111
+S-Box 8 input: 110010
+S-Box 8 output: 0110
+CipherText after Round 01: 00FF0341 9D635E0E
+
+
+Round 2...
+S-Box 1 input: 101111
+S-Box 1 output: 0111
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 110000
+S-Box 4 output: 1111
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 010000
+S-Box 6 output: 0000
+S-Box 7 input: 001011
+S-Box 7 output: 1001
+S-Box 8 input: 011000
+S-Box 8 output: 0101
+CipherText after Round 02: 9D635E0E E2B2D8A6
+
+
+Round 3...
+S-Box 1 input: 100001
+S-Box 1 output: 1111
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 001111
+S-Box 3 output: 1010
+S-Box 4 input: 010111
+S-Box 4 output: 1100
+S-Box 5 input: 101111
+S-Box 5 output: 1101
+S-Box 6 input: 010001
+S-Box 6 output: 0110
+S-Box 7 input: 001010
+S-Box 7 output: 0000
+S-Box 8 input: 001100
+S-Box 8 output: 1011
+CipherText after Round 03: E2B2D8A6 F4CD8540
+
+
+Round 4...
+S-Box 1 input: 100111
+S-Box 1 output: 0010
+S-Box 2 input: 000100
+S-Box 2 output: 1000
+S-Box 3 input: 000100
+S-Box 3 output: 1001
+S-Box 4 input: 101101
+S-Box 4 output: 1101
+S-Box 5 input: 010110
+S-Box 5 output: 1111
+S-Box 6 input: 101010
+S-Box 6 output: 1000
+S-Box 7 input: 100100
+S-Box 7 output: 1011
+S-Box 8 input: 001000
+S-Box 8 output: 0110
+CipherText after Round 04: F4CD8540 55BCCF47
+
+
+Round 5...
+S-Box 1 input: 010001
+S-Box 1 output: 1010
+S-Box 2 input: 000110
+S-Box 2 output: 1110
+S-Box 3 input: 111010
+S-Box 3 output: 1010
+S-Box 4 input: 101110
+S-Box 4 output: 1101
+S-Box 5 input: 001101
+S-Box 5 output: 1101
+S-Box 6 input: 111001
+S-Box 6 output: 0110
+S-Box 7 input: 100100
+S-Box 7 output: 1011
+S-Box 8 input: 001110
+S-Box 8 output: 0001
+CipherText after Round 05: 55BCCF47 17619A1D
+
+
+Round 6...
+S-Box 1 input: 101001
+S-Box 1 output: 0100
+S-Box 2 input: 010011
+S-Box 2 output: 0000
+S-Box 3 input: 100001
+S-Box 3 output: 0001
+S-Box 4 input: 111000
+S-Box 4 output: 0101
+S-Box 5 input: 101111
+S-Box 5 output: 1101
+S-Box 6 input: 110110
+S-Box 6 output: 1010
+S-Box 7 input: 000111
+S-Box 7 output: 0111
+S-Box 8 input: 010010
+S-Box 8 output: 1001
+CipherText after Round 06: 17619A1D EA885347
+
+
+Round 7...
+S-Box 1 input: 010110
+S-Box 1 output: 1100
+S-Box 2 input: 100000
+S-Box 2 output: 0000
+S-Box 3 input: 010110
+S-Box 3 output: 0111
+S-Box 4 input: 101011
+S-Box 4 output: 0001
+S-Box 5 input: 110010
+S-Box 5 output: 1001
+S-Box 6 input: 100101
+S-Box 6 output: 0010
+S-Box 7 input: 001000
+S-Box 7 output: 1111
+S-Box 8 input: 000101
+S-Box 8 output: 1101
+CipherText after Round 07: EA885347 B8D01638
+
+
+Round 8...
+S-Box 1 input: 111000
+S-Box 1 output: 0011
+S-Box 2 input: 000101
+S-Box 2 output: 0100
+S-Box 3 input: 110101
+S-Box 3 output: 1110
+S-Box 4 input: 111001
+S-Box 4 output: 1100
+S-Box 5 input: 011011
+S-Box 5 output: 1001
+S-Box 6 input: 101111
+S-Box 6 output: 1010
+S-Box 7 input: 001111
+S-Box 7 output: 1010
+S-Box 8 input: 001011
+S-Box 8 output: 0011
+CipherText after Round 08: B8D01638 DBAB4C10
+
+
+Round 9...
+S-Box 1 input: 010100
+S-Box 1 output: 0110
+S-Box 2 input: 000010
+S-Box 2 output: 0001
+S-Box 3 input: 010010
+S-Box 3 output: 1101
+S-Box 4 input: 001101
+S-Box 4 output: 0000
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 110100
+S-Box 6 output: 0100
+S-Box 7 input: 010110
+S-Box 7 output: 0111
+S-Box 8 input: 100000
+S-Box 8 output: 0111
+CipherText after Round 09: DBAB4C10 9EC7D990
+
+
+Round 10...
+S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 111111
+S-Box 3 output: 1100
+S-Box 4 input: 000010
+S-Box 4 output: 1101
+S-Box 5 input: 101001
+S-Box 5 output: 0001
+S-Box 6 input: 010111
+S-Box 6 output: 1110
+S-Box 7 input: 101110
+S-Box 7 output: 1110
+S-Box 8 input: 100101
+S-Box 8 output: 1110
+CipherText after Round 10: 9EC7D990 23985979
+
+
+Round 11...
+S-Box 1 input: 100010
+S-Box 1 output: 0001
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 000101
+S-Box 3 output: 0000
+S-Box 4 input: 101101
+S-Box 4 output: 1101
+S-Box 5 input: 111101
+S-Box 5 output: 0101
+S-Box 6 input: 110110
+S-Box 6 output: 1010
+S-Box 7 input: 101001
+S-Box 7 output: 0001
+S-Box 8 input: 111010
+S-Box 8 output: 0011
+CipherText after Round 11: 23985979 6CE981D2
+
+
+Round 12...
+S-Box 1 input: 011010
+S-Box 1 output: 1001
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 101011
+S-Box 3 output: 1001
+S-Box 4 input: 101110
+S-Box 4 output: 1101
+S-Box 5 input: 000000
+S-Box 5 output: 0010
+S-Box 6 input: 000110
+S-Box 6 output: 1111
+S-Box 7 input: 110010
+S-Box 7 output: 1111
+S-Box 8 input: 101101
+S-Box 8 output: 1000
+CipherText after Round 12: 6CE981D2 FD286CB2
+
+
+Round 13...
+S-Box 1 input: 101010
+S-Box 1 output: 0110
+S-Box 2 input: 000000
+S-Box 2 output: 1111
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 111101
+S-Box 4 output: 0010
+S-Box 5 input: 111001
+S-Box 5 output: 1010
+S-Box 6 input: 111010
+S-Box 6 output: 1101
+S-Box 7 input: 011110
+S-Box 7 output: 0001
+S-Box 8 input: 001101
+S-Box 8 output: 0111
+CipherText after Round 13: FD286CB2 3FA26A6E
+
+
+Round 14...
+S-Box 1 input: 110001
+S-Box 1 output: 0101
+S-Box 2 input: 000101
+S-Box 2 output: 0100
+S-Box 3 input: 001110
+S-Box 3 output: 0101
+S-Box 4 input: 100010
+S-Box 4 output: 0110
+S-Box 5 input: 100001
+S-Box 5 output: 1011
+S-Box 6 input: 010101
+S-Box 6 output: 1101
+S-Box 7 input: 100001
+S-Box 7 output: 0110
+S-Box 8 input: 110100
+S-Box 8 output: 1010
+CipherText after Round 14: 3FA26A6E C07BD828
+
+
+Round 15...
+S-Box 1 input: 100110
+S-Box 1 output: 1000
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 110101
+S-Box 3 output: 1110
+S-Box 4 input: 011001
+S-Box 4 output: 0001
+S-Box 5 input: 111111
+S-Box 5 output: 0011
+S-Box 6 input: 110011
+S-Box 6 output: 1110
+S-Box 7 input: 101101
+S-Box 7 output: 1010
+S-Box 8 input: 100011
+S-Box 8 output: 0001
+CipherText after Round 15: C07BD828 CF0367E3
+
+
+Round 16...
+S-Box 1 input: 000001
+S-Box 1 output: 0000
+S-Box 2 input: 000101
+S-Box 2 output: 0100
+S-Box 3 input: 011010
+S-Box 3 output: 0100
+S-Box 4 input: 100000
+S-Box 4 output: 1010
+S-Box 5 input: 001110
+S-Box 5 output: 0110
+S-Box 6 input: 001011
+S-Box 6 output: 1100
+S-Box 7 input: 111011
+S-Box 7 output: 0010
+S-Box 8 input: 000010
+S-Box 8 output: 0010
+CipherText after Round 16: D03CDCF0 CF0367E3
+
+
+
+For block 3...
+Round 1...
+S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 011010
+S-Box 3 output: 0100
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 111101
+S-Box 5 output: 0101
+S-Box 6 input: 010110
+S-Box 6 output: 0100
+S-Box 7 input: 100011
+S-Box 7 output: 1011
+S-Box 8 input: 000010
+S-Box 8 output: 0010
+CipherText after Round 01: 001F0219 FD1F0614
+
+
+Round 2...
+S-Box 1 input: 100011
+S-Box 1 output: 1100
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 011000
+S-Box 3 output: 1011
+S-Box 4 input: 001000
+S-Box 4 output: 0000
+S-Box 5 input: 000000
+S-Box 5 output: 0010
+S-Box 6 input: 100000
+S-Box 6 output: 1001
+S-Box 7 input: 001000
+S-Box 7 output: 1111
+S-Box 8 input: 101100
+S-Box 8 output: 1110
+CipherText after Round 02: FD1F0614 5E85E7BC
+
+
+Round 3...
+S-Box 1 input: 110110
+S-Box 1 output: 0111
+S-Box 2 input: 110010
+S-Box 2 output: 1000
+S-Box 3 input: 001001
+S-Box 3 output: 0011
+S-Box 4 input: 111001
+S-Box 4 output: 1100
+S-Box 5 input: 001000
+S-Box 5 output: 0111
+S-Box 6 input: 101111
+S-Box 6 output: 1010
+S-Box 7 input: 101001
+S-Box 7 output: 0001
+S-Box 8 input: 111001
+S-Box 8 output: 0011
+CipherText after Round 03: 5E85E7BC CB319CD2
+
+
+Round 4...
+S-Box 1 input: 100000
+S-Box 1 output: 0100
+S-Box 2 input: 111011
+S-Box 2 output: 0101
+S-Box 3 input: 111011
+S-Box 3 output: 0101
+S-Box 4 input: 010101
+S-Box 4 output: 0010
+S-Box 5 input: 010101
+S-Box 5 output: 1111
+S-Box 6 input: 011001
+S-Box 6 output: 0000
+S-Box 7 input: 010110
+S-Box 7 output: 0111
+S-Box 8 input: 101100
+S-Box 8 output: 1110
+CipherText after Round 04: CB319CD2 71D2230C
+
+
+Round 5...
+S-Box 1 input: 110101
+S-Box 1 output: 0011
+S-Box 2 input: 001110
+S-Box 2 output: 0100
+S-Box 3 input: 110111
+S-Box 3 output: 0011
+S-Box 4 input: 110011
+S-Box 4 output: 0100
+S-Box 5 input: 010000
+S-Box 5 output: 1000
+S-Box 6 input: 100001
+S-Box 6 output: 0100
+S-Box 7 input: 101101
+S-Box 7 output: 1010
+S-Box 8 input: 011000
+S-Box 8 output: 0101
+CipherText after Round 05: 71D2230C CE3182ED
+
+
+Round 6...
+S-Box 1 input: 110010
+S-Box 1 output: 1100
+S-Box 2 input: 100001
+S-Box 2 output: 1101
+S-Box 3 input: 001011
+S-Box 3 output: 0100
+S-Box 4 input: 011000
+S-Box 4 output: 1011
+S-Box 5 input: 101100
+S-Box 5 output: 0111
+S-Box 6 input: 000111
+S-Box 6 output: 0010
+S-Box 7 input: 011001
+S-Box 7 output: 0010
+S-Box 8 input: 110011
+S-Box 8 output: 1100
+CipherText after Round 06: CE3182ED D93FE7FC
+
+
+Round 7...
+S-Box 1 input: 110000
+S-Box 1 output: 1111
+S-Box 2 input: 000111
+S-Box 2 output: 0111
+S-Box 3 input: 100000
+S-Box 3 output: 1101
+S-Box 4 input: 000100
+S-Box 4 output: 1110
+S-Box 5 input: 000100
+S-Box 5 output: 0100
+S-Box 6 input: 001100
+S-Box 6 output: 0110
+S-Box 7 input: 011111
+S-Box 7 output: 0110
+S-Box 8 input: 110011
+S-Box 8 output: 1100
+CipherText after Round 07: D93FE7FC 82C45597
+
+
+Round 8...
+S-Box 1 input: 011111
+S-Box 1 output: 1000
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 110111
+S-Box 3 output: 0011
+S-Box 4 input: 010001
+S-Box 4 output: 0100
+S-Box 5 input: 010011
+S-Box 5 output: 0000
+S-Box 6 input: 101000
+S-Box 6 output: 0010
+S-Box 7 input: 111010
+S-Box 7 output: 0101
+S-Box 8 input: 010101
+S-Box 8 output: 0110
+CipherText after Round 08: 82C45597 9F85B7D8
+
+
+Round 9...
+S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 010100
+S-Box 5 output: 0011
+S-Box 6 input: 000011
+S-Box 6 output: 1111
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 110000
+S-Box 8 output: 0000
+CipherText after Round 09: 9F85B7D8 70FD301B
+
+
+Round 10...
+S-Box 1 input: 100001
+S-Box 1 output: 1111
+S-Box 2 input: 010111
+S-Box 2 output: 1010
+S-Box 3 input: 111000
+S-Box 3 output: 0101
+S-Box 4 input: 110111
+S-Box 4 output: 1011
+S-Box 5 input: 110100
+S-Box 5 output: 1100
+S-Box 6 input: 000100
+S-Box 6 output: 1010
+S-Box 7 input: 011111
+S-Box 7 output: 0110
+S-Box 8 input: 110010
+S-Box 8 output: 0110
+CipherText after Round 10: 70FD301B 4A7A31BA
+
+
+Round 11...
+S-Box 1 input: 001111
+S-Box 1 output: 0001
+S-Box 2 input: 100010
+S-Box 2 output: 1110
+S-Box 3 input: 111001
+S-Box 3 output: 1011
+S-Box 4 input: 101001
+S-Box 4 output: 1010
+S-Box 5 input: 110000
+S-Box 5 output: 1111
+S-Box 6 input: 100111
+S-Box 6 output: 1100
+S-Box 7 input: 110001
+S-Box 7 output: 1001
+S-Box 8 input: 111100
+S-Box 8 output: 0101
+CipherText after Round 11: 4A7A31BA 07B139E4
+
+
+Round 12...
+S-Box 1 input: 010111
+S-Box 1 output: 1011
+S-Box 2 input: 011101
+S-Box 2 output: 1011
+S-Box 3 input: 000000
+S-Box 3 output: 1010
+S-Box 4 input: 011111
+S-Box 4 output: 1001
+S-Box 5 input: 010111
+S-Box 5 output: 1010
+S-Box 6 input: 110110
+S-Box 6 output: 1010
+S-Box 7 input: 110100
+S-Box 7 output: 0110
+S-Box 8 input: 000001
+S-Box 8 output: 0001
+CipherText after Round 12: 07B139E4 9BC27E7C
+
+
+Round 13...
+S-Box 1 input: 100110
+S-Box 1 output: 1000
+S-Box 2 input: 001101
+S-Box 2 output: 1000
+S-Box 3 input: 001010
+S-Box 3 output: 0011
+S-Box 4 input: 101001
+S-Box 4 output: 1010
+S-Box 5 input: 111011
+S-Box 5 output: 0100
+S-Box 6 input: 011111
+S-Box 6 output: 1000
+S-Box 7 input: 000111
+S-Box 7 output: 0111
+S-Box 8 input: 010001
+S-Box 8 output: 1100
+CipherText after Round 13: 9BC27E7C 196D3D80
+
+
+Round 14...
+S-Box 1 input: 110101
+S-Box 1 output: 0011
+S-Box 2 input: 001000
+S-Box 2 output: 0110
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 111100
+S-Box 4 output: 1000
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 111010
+S-Box 6 output: 1101
+S-Box 7 input: 011100
+S-Box 7 output: 0110
+S-Box 8 input: 101000
+S-Box 8 output: 1001
+CipherText after Round 14: 196D3D80 E3D751A2
+
+
+Round 15...
+S-Box 1 input: 100010
+S-Box 1 output: 0001
+S-Box 2 input: 001100
+S-Box 2 output: 0011
+S-Box 3 input: 000000
+S-Box 3 output: 1010
+S-Box 4 input: 000000
+S-Box 4 output: 0111
+S-Box 5 input: 101110
+S-Box 5 output: 1000
+S-Box 6 input: 100000
+S-Box 6 output: 1001
+S-Box 7 input: 011100
+S-Box 7 output: 0110
+S-Box 8 input: 110111
+S-Box 8 output: 0000
+CipherText after Round 15: E3D751A2 C83D4886
+
+
+Round 16...
+S-Box 1 input: 100001
+S-Box 1 output: 1111
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 111101
+S-Box 3 output: 0010
+S-Box 4 input: 011100
+S-Box 4 output: 0100
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 010101
+S-Box 6 output: 1101
+S-Box 7 input: 010111
+S-Box 7 output: 1100
+S-Box 8 input: 001000
+S-Box 8 output: 0110
+CipherText after Round 16: 9341E30D C83D4886
+
+
+
+Final CipherText: 33 77 8A B2 7C F5 1A 85 AA AA 9C 94 55 1B CF C7 75 46 23 A9 60 24 9C C6
+
+DES Encryptor
+Using Kotlin/JVM
+Created by: Jose A. Alvarado
+Copyright J.A.A. Productions 2019
