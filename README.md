@@ -6,3 +6,4 @@
 > 2. Modify your program so that it can be applied for any given 64-bit key?
 
 ### The project includes a _kotlin/JVM_ version
+### -Jose A. Alvarado
