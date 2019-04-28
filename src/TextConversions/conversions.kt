@@ -2,6 +2,10 @@ package TextConversions
 
 import java.math.BigInteger
 
+fun main() {
+    println(convertHexToString("49206c696b6520636f6d707574657220636c617373"))
+}
+
 fun convertStringToHex(input: String) : String {
     //val inputNoSpace = input.replace("\\s".toRegex(), "")
     val hexArrayList = arrayListOf<String>()
@@ -25,14 +29,25 @@ fun convertHexToBin(input: String) : String {
 }
 
 fun convertBinToHex(input: String) : String {
-    val chunckedBinList = input.chunked(4)
+    val chunkedBinList = input.chunked(4)
     val hexArrayList = arrayListOf<String>()
 
-    chunckedBinList.forEach { bin->
+    chunkedBinList.forEach { bin->
         hexArrayList.add(BigInteger(bin, 2).toString(16))
     }
 
     return hexArrayList.joinToString("") { it.capitalize() }
+}
+
+fun convertHexToString(input: String) : String {
+    val chunkedHexList = input.chunked(2)
+    val strArrayList = arrayListOf<Char>()
+
+    chunkedHexList.forEach { hex ->
+        strArrayList.add(BigInteger(hex, 16).toInt().toChar())
+    }
+
+    return strArrayList.joinToString("")
 }
 
 fun convertStringToBin(input: String) : String {

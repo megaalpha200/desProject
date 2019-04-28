@@ -1,5 +1,6 @@
 import DESFunctions.desEncrypt
 import TextConversions.convertBinToHex
+import TextConversions.convertHexToString
 import TextConversions.convertStringToBin
 
 fun main() {
@@ -25,7 +26,11 @@ fun main() {
 
     print(System.lineSeparator())
 
-    println("Final CipherText: ${convertBinToHex(desEncrypt(plainTextBin, initialKeyBin)).chunked(2).joinToString(" ")}")
+    val cipherTextHex = convertBinToHex(desEncrypt(plainTextBin, initialKeyBin))
+    val cipherTextStr = convertHexToString(cipherTextHex)
+
+    println("Final CipherText (Hex): ${cipherTextHex.chunked(2).joinToString(" ")}")
+    println("Final CipherText (String): $cipherTextStr")
 
     print(System.lineSeparator())
     println("DES Encryptor")

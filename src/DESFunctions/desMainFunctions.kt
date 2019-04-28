@@ -2,8 +2,6 @@ package DESFunctions
 
 import TextConversions.convertBinToHex
 import TextConversions.convertHexToBin
-import TextConversions.convertStringToBin
-import TextConversions.convertStringToHex
 import binmanip.shiftBitsLeft
 import java.lang.StringBuilder
 
@@ -106,7 +104,7 @@ val S_BOX_GROUP = arrayOf(S_BOX_1, S_BOX_2, S_BOX_3, S_BOX_4, S_BOX_5, S_BOX_6, 
 val SHIFT_ONCE_ROUNDS = arrayOf(1, 2, 9, 16)
 
 fun main() {
-    //println("CipherText: ${convertBinToHex(desEncrypt(convertHexToBin("0123456789ABCDEF"), convertHexToBin("133457799BBCDFF1")))}")
+    println("CipherText: ${convertBinToHex(desEncrypt(convertHexToBin("0123456789ABCDEF"), convertHexToBin("133457799BBCDFF1")))}")
 
     /*S_BOX_1.forEachIndexed { index, row ->
         if (row.size != row.distinct().size) {
@@ -198,6 +196,8 @@ fun roundFunction(input: String, key: String, swap: Boolean = true) : String {
     val leftInput = input.subSequence(0, (input.length / 2)).toString()
     val rightInput = input.subSequence((input.length / 2), input.length).toString()
 
+    println("Pre-Round Input: ${convertBinToHex(leftInput)} ${convertBinToHex(rightInput)}")
+
     val leftOutput: String
     val rightOutput: String
 
@@ -215,7 +215,9 @@ fun roundFunction(input: String, key: String, swap: Boolean = true) : String {
 
 fun innerRoundFunction(input: String, key: String) : String {
     val expandedInput = applyPBox(input, EXPANSION_P_BOX)
+    println("Expansion Result: ${convertBinToHex(expandedInput)}")
     val inputWithAppliedKey = xorBinaryBlocks(expandedInput, key)
+    println("Applied Key Result: ${convertBinToHex(inputWithAppliedKey)}")
     val chunkedInputWithAppliedKey = inputWithAppliedKey.chunked(6)
 
     val postSBoxResults = arrayListOf<String>()
