@@ -119,7 +119,7 @@ fun desEncrypt(plainText: String, key: String) : String {
     val plainTextBinChuncked = plainTextBin.chunked(64) { it.padEnd(64, '0') }
     println("PlainText Binary: ${plainTextBinChuncked.joinToString(" | ") { it.chunked(4).joinToString(" ") }}")
 
-    val keyBin = key
+    val keyBin = key.padEnd(64, '0')
     //println("Key Binary: ${keyBin.chunked(8).joinToString(" ")}")
 
     val roundKeys = generateRoundKeys(keyBin)
