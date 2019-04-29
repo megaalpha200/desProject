@@ -1,4 +1,4 @@
-import {string_chop} from './aux';
+import {string_chop} from './auxFuncs';
 
 export const convertHexToBin = (input) => {
     const binArray = [];

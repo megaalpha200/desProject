@@ -1,4 +1,4 @@
-import * as aux from './aux';
+import * as aux from './auxFuncs';
 import { convertBinToHex } from './conversions';
 
 /*--------------------------------P-Boxes-------------------------------------*/

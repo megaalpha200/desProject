@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as conversions from './assets/conversions';
-import  * as aux from './assets/aux';
+import  * as aux from './assets/auxFuncs';
 import * as desFuncs from './assets/desMainFunctions';
 
 class ControlledTabs extends React.Component {
