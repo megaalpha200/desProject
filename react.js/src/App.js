@@ -32,7 +32,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currSelectedTabKey: 'string',
+      currSelectedTabKey: "string",
+      keyCharLimit: "8",
       plaintext: "",
       key: "",
       plaintextPlaceholder: "Enter Plaintext as a string...",
@@ -71,16 +72,19 @@ class App extends Component {
   handleTabSelected(key) {
     let plaintextPlaceholder;
     let keyPlaceholder;
+    let keyCharLimit;
 
     console.log(key);
 
     if (key === "string") {
       plaintextPlaceholder = "Enter Plaintext as a string...";
       keyPlaceholder = "Enter 64-bit Key as a string...";
+      keyCharLimit = "8";
     }
     else if (key === "hex") {
       plaintextPlaceholder = "Enter Plaintext as a hexadecimal...";
       keyPlaceholder = "Enter 64-bit Key as a hexadecimal...";
+      keyCharLimit = "16";
     }
 
     document.getElementById("plaintext").value = "";
@@ -90,6 +94,7 @@ class App extends Component {
       currSelectedTabKey: key,
       plaintextPlaceholder: plaintextPlaceholder,
       keyPlaceholder: keyPlaceholder,
+      keyCharLimit: keyCharLimit,
       plaintext: "",
       key: "",
       cipherTextHex: "",
@@ -217,7 +222,7 @@ class App extends Component {
               <Form onSubmit={this.handleSubmit}>
                 <Form.Control id="plaintext" size="lg" type="text"  autoComplete="off" onChange={(e) => this.handleChange(e)} placeholder={this.state.plaintextPlaceholder} />
                 <br/>
-                <Form.Control id="key" size="lg" type="text" autoComplete="off" onChange={(e) => this.handleChange(e)} placeholder={this.state.keyPlaceholder} />
+                <Form.Control id="key" size="lg" type="text" autoComplete="off" maxLength={this.state.keyCharLimit} onChange={(e) => this.handleChange(e)} placeholder={this.state.keyPlaceholder} />
                 <br/>
                 <Button variant="primary" type="submit" block>Encrypt</Button>
               </Form>
