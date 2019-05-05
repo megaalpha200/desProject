@@ -101,7 +101,7 @@ const SHIFT_ONCE_ROUNDS = [1, 2, 9, 16];
 
 export let outputLines = [];
 
-export const desEncrypt = (plainText, key) => {
+export const desEncrypt = (plainText, key, swapLastRound = false) => {
     outputLines = [];
     const finalResultArray = [];
     const plainTextBin = plainText;
@@ -126,13 +126,13 @@ export const desEncrypt = (plainText, key) => {
 
     for(let chunk = 0; chunk < plainTextBinChuncked.length; chunk++) {
         outputLines.push({output: `For block ${chunk + 1}...`});
-        finalResultArray.push(desBinEncrypt(plainTextBinChuncked[chunk].toString(), roundKeys));
+        finalResultArray.push(desBinEncrypt(plainTextBinChuncked[chunk].toString(), roundKeys, swapLastRound));
     }
 
     return finalResultArray.join("");
 }
 
-const desBinEncrypt = (plainTextBin, roundKeys) => {
+const desBinEncrypt = (plainTextBin, roundKeys, swapLastRound = false) => {
     const cipherTextPostInitPBox = applyPBox(plainTextBin, INITIAL_P_BOX);
 
     let tempRoundCipherText = cipherTextPostInitPBox;
@@ -140,7 +140,7 @@ const desBinEncrypt = (plainTextBin, roundKeys) => {
         outputLines.push({output: `Round ${round+1}...`});
 
         if ((round + 1) === 16) {
-            tempRoundCipherText = roundFunction(tempRoundCipherText, roundKeys[round], false);
+            tempRoundCipherText = roundFunction(tempRoundCipherText, roundKeys[round], swapLastRound);
         }
         else {
             tempRoundCipherText = roundFunction(tempRoundCipherText, roundKeys[round], true);

@@ -40,6 +40,8 @@ class App extends Component {
       keyPlaceholder: "Enter 64-bit Key as a string...",
       cipherTextHex: "",
       cipherTextStr: "",
+      swapLastRoundSelectVal: "no-swap",
+      swapLastRound: false,
       isSubmitted: false,
       console: {
         currConsoleLineNum: -1,
@@ -74,8 +76,6 @@ class App extends Component {
     let keyPlaceholder;
     let keyCharLimit;
 
-    console.log(key);
-
     if (key === "string") {
       plaintextPlaceholder = "Enter Plaintext as a string...";
       keyPlaceholder = "Enter 64-bit Key as a string...";
@@ -99,11 +99,22 @@ class App extends Component {
       key: "",
       cipherTextHex: "",
       cipherTextStr: "",
+      swapLastRoundSelectVal: "no-swap",
+      swapLastRound: false,
       isSubmitted: false,
       console: {
         currConsoleLineNum: -1,
         consoleLines: [],
       },
+    });
+  }
+
+  handleSelectChange(event) {
+    const swap = (event.target.value === "swap") ? true : false;
+
+    this.setState({
+      swapLastRoundSelectVal: event.target.value,
+      swapLastRound: swap,
     });
   }
 
@@ -115,7 +126,7 @@ class App extends Component {
         conversions.convertStringToBin(this.state.plaintext) : conversions.convertHexToBin(this.state.plaintext);
       const keyBin = (this.state.currSelectedTabKey === "string") ? 
           conversions.convertStringToBin(this.state.key) : conversions.convertHexToBin(this.state.key);
-      const cipherTextBin = desFuncs.desEncrypt(plaintextBin, keyBin);
+      const cipherTextBin = desFuncs.desEncrypt(plaintextBin, keyBin, this.state.swapLastRound);
       const cipherTextHex = conversions.convertBinToHex(cipherTextBin);
       const cipherTextStr = conversions.convertHexToString(cipherTextHex);
       let outputLines = desFuncs.outputLines;
@@ -219,6 +230,12 @@ class App extends Component {
                 onSelect={(key) => this.handleTabSelected(key)}
                />
               <br/>
+              <select value={this.state.swapLastRoundSelectVal} onChange={(e) => this.handleSelectChange(e)}>
+                <option value="no-swap">Don't Swap Last Round</option>
+                <option value="swap">Swap Last Round</option>
+              </select>
+              <br/>
+              <br/>
               <Form onSubmit={this.handleSubmit}>
                 <Form.Control id="plaintext" size="lg" type="text"  autoComplete="off" onChange={(e) => this.handleChange(e)} placeholder={this.state.plaintextPlaceholder} />
                 <br/>
@@ -246,6 +263,7 @@ class App extends Component {
               </div>
               <br/>
               <h6>Created by <a href="https://github.com/megaalpha200" target="new_tab">Jose A. Alvarado</a> for CS 547 - Texas Southern University</h6>
+              <h6>The GitHub repository can be found <a href="https://github.com/megaalpha200/desProject" target="new_tab">here</a>.</h6>
               <h6>&copy; <a href="http://jaaproductions.tk" target="new_tab">J.A.A. Productions</a> 2019</h6>
           </header>
         </div>

@@ -62,3 +62,7 @@
   bottom: 0;
   position: absolute;
 }
+
+h6 a {
+  color: goldenrod;
+}
