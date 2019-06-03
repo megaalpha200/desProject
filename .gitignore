@@ -22,8 +22,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#kotlin
-/kotlin/.idea
-/kotlin/out
-/kotlin/des.iml
-
