@@ -1,7 +1,6 @@
 package DESFunctions
 
 import TextConversions.convertBinToHex
-import TextConversions.convertHexToBin
 import java.lang.StringBuilder
 
 /*--------------------------------P-Boxes-------------------------------------*/
@@ -102,8 +101,22 @@ val S_BOX_8 = arrayOf(intArrayOf(13, 2, 8, 4, 6, 15, 11, 1, 10, 9, 3, 14, 5, 0, 
 val S_BOX_GROUP = arrayOf(S_BOX_1, S_BOX_2, S_BOX_3, S_BOX_4, S_BOX_5, S_BOX_6, S_BOX_7, S_BOX_8)
 val SHIFT_ONCE_ROUNDS = arrayOf(1, 2, 9, 16)
 
+enum class Mode (value: Int) {
+    ENCRYPT(0), DECRYPT(1);
+
+    private val mode = value
+
+    override fun toString() : String {
+        return when(mode) {
+            0 -> "Encrypt"
+            1 -> "Decrypt"
+            else -> ""
+        }
+    }
+}
+
 fun main() {
-    println("CipherText: ${convertBinToHex(desEncrypt(convertHexToBin("0123456789ABCDEF"), convertHexToBin("133457799BBCDFF1")))}")
+    //println("CipherText: ${convertBinToHex(desPrep(convertHexToBin("0123456789ABCDEF"), convertHexToBin("133457799BBCDFF1"), false))}")
 
     /*S_BOX_1.forEachIndexed { index, row ->
         if (row.size != row.distinct().size) {
@@ -112,49 +125,50 @@ fun main() {
     }*/
 }
 
-fun desEncrypt(plainText: String, key: String) : String {
+fun desPrep(mode: Mode, inputText: String, key: String, swapLastRound: Boolean) : String {
     val finalResult = StringBuilder("")
-    val plainTextBin = plainText
-    val plainTextBinChuncked = plainTextBin.chunked(64) { it.padEnd(64, '0') }
-    println("PlainText Binary: ${plainTextBinChuncked.joinToString(" | ") { it.chunked(4).joinToString(" ") }}")
+    val inputTextBin = inputText
+    val inputTextBinChunked = inputTextBin.chunked(64) { it.padEnd(64, '0') }
+    println("${if (mode == Mode.ENCRYPT) "CipherText" else if (mode == Mode.DECRYPT) "PlainText" else ""} Binary: ${inputTextBinChunked.joinToString(" | ") { it.chunked(4).joinToString(" ") }}")
 
     val keyBin = key.padEnd(64, '0')
     //println("Key Binary: ${keyBin.chunked(8).joinToString(" ")}")
 
-    val roundKeys = generateRoundKeys(keyBin)
+    val roundKeys = generateRoundKeys(keyBin, mode)
     println(System.lineSeparator())
 
-    plainTextBinChuncked.forEachIndexed { index, block ->
+    inputTextBinChunked.forEachIndexed { index, block ->
         println("For block ${index + 1}...")
-        finalResult.append(desBinEncrypt(block.toString(), roundKeys))
+
+        finalResult.append(desBinEncryptDecrypt(mode, block.toString(), roundKeys, swapLastRound))
     }
 
     return finalResult.toString()
 }
 
-fun desBinEncrypt(plainTextBin: String, roundKeys: List<String>) : String {
-    val cipherTextPostInitPBox = applyPBox(plainTextBin, INITIAL_P_BOX)
+fun desBinEncryptDecrypt(mode: Mode, inputTextBin: String, roundKeys: List<String>, swapLastRound: Boolean) : String {
+    val inputTextPostInitPBox = applyPBox(inputTextBin, INITIAL_P_BOX)
 
-    var tempRoundCipherText = cipherTextPostInitPBox
+    var tempRoundInputText = inputTextPostInitPBox
     for (round in 0 until 16) {
         println("Round ${round+1}...")
 
-        tempRoundCipherText = if (round + 1 == 16)
-            roundFunction(tempRoundCipherText, roundKeys[round], false)
+        tempRoundInputText = if (round + 1 == 16)
+            roundFunction(tempRoundInputText, roundKeys[round], swapLastRound)
         else
-            roundFunction(tempRoundCipherText, roundKeys[round])
+            roundFunction(tempRoundInputText, roundKeys[round])
 
-        println("CipherText after Round ${(round + 1).toString().padStart(2, '0')}: ${convertBinToHex(tempRoundCipherText).chunked(8).joinToString(" ")}")
+        println("${if (mode == Mode.ENCRYPT) "CipherText" else if (mode == Mode.DECRYPT) "PlainText" else ""} after Round ${(round + 1).toString().padStart(2, '0')}: ${convertBinToHex(tempRoundInputText).chunked(8).joinToString(" ")}")
         println(System.lineSeparator())
     }
 
     print(System.lineSeparator())
-    return applyPBox(tempRoundCipherText, FINAL_P_BOX)
+    return applyPBox(tempRoundInputText, FINAL_P_BOX)
 }
 
 /*----------------------------------Key Functions-------------------------------------*/
 
-fun generateRoundKeys(key: String) : List<String> {
+fun generateRoundKeys(key: String, mode: Mode) : List<String> {
     val roundKeys = arrayListOf<String>()
 
     val cipherKey = applyPBox(key, PARITY_BIT_DROP_P_BOX)
@@ -180,8 +194,14 @@ fun generateRoundKeys(key: String) : List<String> {
         tempShiftedKey = leftShiftedBlock + rightShiftedBlock
 
         val compressedKey = applyPBox(tempShiftedKey, KEY_COMPRESSION_P_BOX)
-        println("Round ${round.toString().padStart(2,'0')} Key: ${compressedKey.chunked(6).joinToString(" ")}")
         roundKeys.add(compressedKey)
+    }
+
+    if (mode == Mode.DECRYPT)
+        roundKeys.reverse()
+
+    for(round in 0..15) {
+        println("Round ${(round+1).toString().padStart(2,'0')} Key: ${roundKeys[round].chunked(6).joinToString(" ")}")
     }
 
     return roundKeys

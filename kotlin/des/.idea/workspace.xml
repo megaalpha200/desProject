@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51834bf7-e91c-4e7e-968b-1e72a3c6842d" name="Default Changelist" comment="">
+    <list default="true" id="51834bf7-e91c-4e7e-968b-1e72a3c6842d" name="Default Changelist" comment="Added extra padding for key&#10;&#10;*Added extra padding for any key shorter than 64-bits.">
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/DESFunctions/desMainFunctions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/TextConversions/conversions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/binmanip/binaryManipulations.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/des/DESFunctions/DesMainFunctionsKt$desEncrypt$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/des/DESFunctions/DesMainFunctionsKt$desEncrypt$plainTextBinChuncked$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/des/DESFunctions/DesMainFunctionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/des/DESFunctions/DesMainFunctionsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/des/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/des/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,23 +23,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="75">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
-                <element signature="e#0#153#0" expanded="true" />
+                <element signature="e#0#214#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TextConversions/conversions.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="-1130">
+              <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+              <folding>
+                <element signature="e#22#116#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,9 +81,9 @@
         <option value="$PROJECT_DIR$/src/DESFunctions/PBoxFunctions.kt" />
         <option value="$PROJECT_DIR$/src/DESFunctions/desKeyFunctions.kt" />
         <option value="$PROJECT_DIR$/src/DESFunctions/boxFunctions.kt" />
-        <option value="$PROJECT_DIR$/src/main.kt" />
         <option value="$PROJECT_DIR$/src/TextConversions/conversions.kt" />
         <option value="$PROJECT_DIR$/src/binmanip/binaryManipulations.kt" />
+        <option value="$PROJECT_DIR$/src/main.kt" />
         <option value="$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt" />
       </list>
     </option>
@@ -92,16 +107,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="des" type="b2602c69:ProjectViewProjectNode" />
+              <item name="des" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="des" type="b2602c69:ProjectViewProjectNode" />
+              <item name="des" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="des" type="b2602c69:ProjectViewProjectNode" />
+              <item name="des" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DESFunctions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="des" type="b2602c69:ProjectViewProjectNode" />
+              <item name="des" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TextConversions" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Project 3/aes/kotlin/aes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -259,7 +301,8 @@
       <workItem from="1558137231343" duration="273000" />
       <workItem from="1558142672942" duration="3188000" />
       <workItem from="1559524751602" duration="222000" />
-      <workItem from="1559525131976" duration="67000" />
+      <workItem from="1559525131976" duration="508000" />
+      <workItem from="1559525832948" duration="19241000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1555783391551</created>
@@ -286,19 +329,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94694000" />
+    <option name="totallyTimeSpent" value="114376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23786408" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24190938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33064517" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33064517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,27 +386,30 @@
     <entry file="file://$PROJECT_DIR$/src/DESFunctions/desKeyFunctions.kt" />
     <entry file="file://$PROJECT_DIR$/src/DESFunctions/boxFunctions.kt" />
     <entry file="file://$PROJECT_DIR$/src/binmanip/binaryManipulations.kt" />
-    <entry file="file://$PROJECT_DIR$/src/TextConversions/conversions.kt">
+    <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="75">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#0#214#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.kt">
+    <entry file="file://$PROJECT_DIR$/src/TextConversions/conversions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#153#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="-1130">
+          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+          <folding>
+            <element signature="e#22#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
