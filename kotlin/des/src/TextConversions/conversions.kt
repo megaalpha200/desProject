@@ -3,7 +3,8 @@ package TextConversions
 import java.math.BigInteger
 
 fun main() {
-    println(convertHexToString("49206c696b6520636f6d707574657220636c617373"))
+    //println(convertHexToString("49206c696b6520636f6d707574657220636c617373"))
+   convertStringToBin("Computer")
 }
 
 fun convertStringToHex(input: String) : String {
@@ -36,7 +37,7 @@ fun convertBinToHex(input: String) : String {
         hexArrayList.add(BigInteger(bin, 2).toString(16))
     }
 
-    return hexArrayList.joinToString("") { it.capitalize() }
+    return hexArrayList.joinToString("") { it.toUpperCase() }
 }
 
 fun convertHexToString(input: String) : String {

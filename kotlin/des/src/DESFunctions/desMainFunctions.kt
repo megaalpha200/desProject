@@ -98,8 +98,8 @@ val S_BOX_8 = arrayOf(intArrayOf(13, 2, 8, 4, 6, 15, 11, 1, 10, 9, 3, 14, 5, 0, 
 
 /*----------------------------------------------------------------------------*/
 
-val S_BOX_GROUP = arrayOf(S_BOX_1, S_BOX_2, S_BOX_3, S_BOX_4, S_BOX_5, S_BOX_6, S_BOX_7, S_BOX_8)
-val SHIFT_ONCE_ROUNDS = arrayOf(1, 2, 9, 16)
+private val S_BOX_GROUP = arrayOf(S_BOX_1, S_BOX_2, S_BOX_3, S_BOX_4, S_BOX_5, S_BOX_6, S_BOX_7, S_BOX_8)
+private val SHIFT_ONCE_ROUNDS = arrayOf(1, 2, 9, 16)
 
 enum class Mode (value: Int) {
     ENCRYPT(0), DECRYPT(1);
@@ -123,13 +123,15 @@ fun main() {
             println("Error: $index")
         }
     }*/
+
+    println(applySBox("110111", S_BOX_3))
 }
 
 fun desPrep(mode: Mode, inputText: String, key: String, swapLastRound: Boolean) : String {
     val finalResult = StringBuilder("")
     val inputTextBin = inputText
     val inputTextBinChunked = inputTextBin.chunked(64) { it.padEnd(64, '0') }
-    println("${if (mode == Mode.ENCRYPT) "CipherText" else if (mode == Mode.DECRYPT) "PlainText" else ""} Binary: ${inputTextBinChunked.joinToString(" | ") { it.chunked(4).joinToString(" ") }}")
+    println("${if (mode == Mode.ENCRYPT) "PlainText" else if (mode == Mode.DECRYPT) "CipherText" else ""} Binary: ${inputTextBinChunked.joinToString(" | ") { it.chunked(4).joinToString(" ") }}")
 
     val keyBin = key.padEnd(64, '0')
     //println("Key Binary: ${keyBin.chunked(8).joinToString(" ")}")
@@ -146,7 +148,7 @@ fun desPrep(mode: Mode, inputText: String, key: String, swapLastRound: Boolean) 
     return finalResult.toString()
 }
 
-fun desBinEncryptDecrypt(mode: Mode, inputTextBin: String, roundKeys: List<String>, swapLastRound: Boolean) : String {
+private fun desBinEncryptDecrypt(mode: Mode, inputTextBin: String, roundKeys: List<String>, swapLastRound: Boolean) : String {
     val inputTextPostInitPBox = applyPBox(inputTextBin, INITIAL_P_BOX)
 
     var tempRoundInputText = inputTextPostInitPBox
@@ -168,7 +170,7 @@ fun desBinEncryptDecrypt(mode: Mode, inputTextBin: String, roundKeys: List<Strin
 
 /*----------------------------------Key Functions-------------------------------------*/
 
-fun generateRoundKeys(key: String, mode: Mode) : List<String> {
+private fun generateRoundKeys(key: String, mode: Mode) : List<String> {
     val roundKeys = arrayListOf<String>()
 
     val cipherKey = applyPBox(key, PARITY_BIT_DROP_P_BOX)
@@ -211,7 +213,7 @@ fun generateRoundKeys(key: String, mode: Mode) : List<String> {
 
 /*--------------------------------Round Functions-------------------------------------*/
 
-fun roundFunction(input: String, key: String, swap: Boolean = true) : String {
+private fun roundFunction(input: String, key: String, swap: Boolean = true) : String {
     val leftInput = input.subSequence(0, (input.length / 2)).toString()
     val rightInput = input.subSequence((input.length / 2), input.length).toString()
 
@@ -232,7 +234,7 @@ fun roundFunction(input: String, key: String, swap: Boolean = true) : String {
     return leftOutput + rightOutput
 }
 
-fun innerRoundFunction(input: String, key: String) : String {
+private fun innerRoundFunction(input: String, key: String) : String {
     val expandedInput = applyPBox(input, EXPANSION_P_BOX)
     println("Expansion Result: ${convertBinToHex(expandedInput)}")
     val inputWithAppliedKey = xorBinaryBlocks(expandedInput, key)
