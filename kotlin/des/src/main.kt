@@ -54,7 +54,7 @@ fun encryptDecryptMenu() {
 
                 inputTextAndKeyPair = when(menuOption) {
                     1 -> encryptDecryptStringInputTextPrep(mode)
-                    2 -> encryptDecryptInputPlainTextPrep(mode)
+                    2 -> encryptDecryptHexInputTextPrep(mode)
                     3 -> {
                         println("Goodbye!")
                         return
@@ -98,7 +98,7 @@ fun encryptDecryptMenu() {
             println(e.toString())
         }
         catch (e: NumberFormatException) {
-            println("Please enter a number!")
+            println("$e - Please enter a number!")
         }
         catch (e: Exception) {
             println(e.toString())
@@ -150,7 +150,7 @@ fun encryptDecryptStringInputTextPrep(mode: Mode) : Pair<String, String> {
     return Pair(inputTextBin, initialKeyBin)
 }
 
-fun encryptDecryptInputPlainTextPrep(mode: Mode) : Pair<String, String> {
+fun encryptDecryptHexInputTextPrep(mode: Mode) : Pair<String, String> {
     print(System.lineSeparator())
 
     when(mode) {

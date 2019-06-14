@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dc26fc3-5a91-4c86-9bfb-0edbd9a7272c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/des.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DesMainFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stringmanip/StringManipulations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/textconversions/TextConversions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/out/production/des/DESFunctions/DesMainFunctionsKt$desPrep$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/out/production/des/DESFunctions/DesMainFunctionsKt$desPrep$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/out/production/des/DESFunctions/DesMainFunctionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/out/production/des/DESFunctions/DesMainFunctionsKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/out/production/des/DESFunctions/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/out/production/des/DESFunctions/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/out/production/des/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/out/production/des/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/out/production/des/TextConversions/ConversionsKt$convertBinToHex$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/out/production/des/TextConversions/ConversionsKt$convertBinToHex$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/out/production/des/TextConversions/ConversionsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/out/production/des/TextConversions/ConversionsKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/src/DESFunctions/desMainFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/src/DESFunctions/desMainFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/src/TextConversions/conversions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/src/TextConversions/conversions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../kotlin/des/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des/src/main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DesMainFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="1904">
               <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="217" column="52" selection-start-line="217" selection-start-column="52" selection-end-line="217" selection-end-column="52" />
+            <state relative-caret-position="178">
+              <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -139,6 +127,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last.edited.regexp" value="" />
@@ -247,16 +236,20 @@
       <updated>1560284964713</updated>
       <workItem from="1560284969054" duration="21110000" />
       <workItem from="1560375288621" duration="2627000" />
+      <workItem from="1560462909197" duration="41000" />
+      <workItem from="1560469799316" duration="42000" />
+      <workItem from="1560470444664" duration="124000" />
+      <workItem from="1560470614957" duration="271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23737000" />
+    <option name="totallyTimeSpent" value="24215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28317153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.302589" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -311,6 +304,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesMainFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/textconversions/TextConversions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -321,20 +324,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DesMainFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="217" column="52" selection-start-line="217" selection-start-column="52" selection-end-line="217" selection-end-column="52" />
+        <state relative-caret-position="178">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />

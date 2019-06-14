@@ -113,8 +113,16 @@ public class Main {
                 inputTextAndKeyPair = null;
                 swapLastRound = null;
             }
+            catch (WrongMenuChoiceException e) {
+                System.out.println(e.toString());
+            }
+            catch (NumberFormatException e) {
+                System.out.println(e.toString() + " - Please enter a number!");
+            }
             catch (Exception e) {
                 System.out.println(e.toString());
+                mode = null;
+                inputTextAndKeyPair = null;
             }
         } while(true);
     }
