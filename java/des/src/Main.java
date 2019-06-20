@@ -24,7 +24,7 @@ public class Main {
                 if (mode == null) {
                     System.out.print(System.lineSeparator());
                     System.out.println("DES Encryptor/Decryptor");
-                    System.out.println("Using Kotlin/JVM");
+                    System.out.println("Using Java/JVM");
                     System.out.println("Created by: Jose A. Alvarado");
                     System.out.println("Copyright J.A.A. Productions 2019");
 
@@ -123,6 +123,7 @@ public class Main {
                 System.out.println(e.toString());
                 mode = null;
                 inputTextAndKeyPair = null;
+                swapLastRound = null;
             }
         } while(true);
     }
