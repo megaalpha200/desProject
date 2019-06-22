@@ -457,9 +457,9 @@ void encrypt(string plainTextBin, string initialKeyBin, bool swapLastRound)
 	outputStream << "Final CipherText (String)" << cipherTextStr << endl;
 }
 
-void decrypt(string cipherText, string initialKeyBin, bool swapLastRound)
+void decrypt(string cipherTextBin, string initialKeyBin, bool swapLastRound)
 {
-	string plainTextHex = convertBinToHex(desPrep(Mode::DECRYPT, cipherText, initialKeyBin, swapLastRound));
+	string plainTextHex = convertBinToHex(desPrep(Mode::DECRYPT, cipherTextBin, initialKeyBin, swapLastRound));
 	string plainTextStr = convertHexToString(plainTextHex);
 
 	vector<string> chunkedPlainTextHex;

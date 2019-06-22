@@ -1046,3 +1046,1051 @@ Final CipherText (String)3wŠ²|õ…ªªœ”UÏÇuF#©`$œÆ
 
 
 
+CipherText: 33778ab27cf51a85aaaa9c94551bcfc7754623a960249cc6
+CipherText Hex and Binary Representations:
+Hex: 33 77 8a b2 7c f5 1a 85 aa aa 9c 94 55 1b cf c7 75 46 23 a9 60 24 9c c6
+Binary: 00110011 01110111 10001010 10110010 01111100 11110101 00011010 10000101 10101010 10101010 10011100 10010100 01010101 00011011 11001111 11000111 01110101 01000110 00100011 10101001 01100000 00100100 10011100 11000110
+
+Initial Key: 5365637572697479
+Initial Key Hex and Binary Representations:
+Hex: 53 65 63 75 72 69 74 79
+Binary: 01010011 01100101 01100011 01110101 01110010 01101001 01110100 01111001
+
+CipherText Binary: 0011001101110111100010101011001001111100111101010001101010000101 | 1010101010101010100111001001010001010101000110111100111111000111 | 0111010101000110001000111010100101100000001001001001110011000110
+Round 01 Key: 111000 011011 111010 100110 100010 000100 000111 000101
+Round 02 Key: 111110 001011 111010 101110 000100 000011 101000 110010
+Round 03 Key: 110110 111010 111010 100110 101100 000001 101100 101000
+Round 04 Key: 110101 111010 110010 101101 110100 100011 001000 101000
+Round 05 Key: 010111 010010 110110 111101 110000 000101 001000 001001
+Round 06 Key: 000110 110110 110110 011101 110110 000100 000110 001000
+Round 07 Key: 001111 110110 100111 001101 010010 100100 011100 000100
+Round 08 Key: 001111 110101 100111 011011 100010 101100 010100 000001
+Round 09 Key: 101111 110100 101111 011001 011001 000011 001000 111010
+Round 10 Key: 101011 110101 000111 111011 111000 000011 100000 001010
+Round 11 Key: 001011 111101 001101 111011 011100 000010 000100 101000
+Round 12 Key: 111011 101101 001101 010111 010100 100111 001100 000000
+Round 13 Key: 111001 101101 011101 110110 100110 100000 001100 001001
+Round 14 Key: 111101 001111 011001 110010 110100 100000 011110 000001
+Round 15 Key: 111100 001011 111011 110110 100000 101100 001010 000101
+Round 16 Key: 111100 001011 011001 101110 011101 010010 100000 110000
+
+For block 1...
+Round 1...
+Pre-Round Input: 327bb2a3 ac3b544f
+Expansion Result: d581f6aa825f
+Applied Key Result: 343f5022c39aS-Box 1 input: 001101
+S-Box 1 output: 1101
+S-Box 2 input: 000011
+S-Box 2 output: 1101
+S-Box 3 input: 111101
+S-Box 3 output: 0010
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 001000
+S-Box 5 output: 0111
+S-Box 6 input: 101100
+S-Box 6 output: 1100
+S-Box 7 input: 001110
+S-Box 7 output: 1101
+S-Box 8 input: 011010
+S-Box 8 output: 0000
+PlainText after Round 01: ac3b544f 80e7723c
+
+Round 2...
+Pre-Round Input: ac3b544f 80e7723c
+Expansion Result: 40170eba41f9
+Applied Key Result: b8a9a0aa7bcbS-Box 1 input: 101110
+S-Box 1 output: 1011
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 100110
+S-Box 3 output: 1001
+S-Box 4 input: 100000
+S-Box 4 output: 1010
+S-Box 5 input: 101010
+S-Box 5 output: 1101
+S-Box 6 input: 100111
+S-Box 6 output: 1100
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 001011
+S-Box 8 output: 0011
+PlainText after Round 02: 80e7723c dbe51b05
+
+Round 3...
+Pre-Round Input: 80e7723c dbe51b05
+Expansion Result: ef7f0a8f680b
+Applied Key Result: 34d1ac3f7323S-Box 1 input: 001101
+S-Box 1 output: 1101
+S-Box 2 input: 001101
+S-Box 2 output: 1000
+S-Box 3 input: 000110
+S-Box 3 output: 1110
+S-Box 4 input: 101100
+S-Box 4 output: 0111
+S-Box 5 input: 001111
+S-Box 5 output: 0001
+S-Box 6 input: 110111
+S-Box 6 output: 0111
+S-Box 7 input: 001100
+S-Box 7 output: 1000
+S-Box 8 input: 100011
+S-Box 8 output: 0001
+PlainText after Round 03: dbe51b05 200ecb33
+
+Round 4...
+Pre-Round Input: dbe51b05 200ecb33
+Expansion Result: 90005d6569a6
+Applied Key Result: 47acf0b75b8eS-Box 1 input: 010001
+S-Box 1 output: 1010
+S-Box 2 input: 111010
+S-Box 2 output: 0011
+S-Box 3 input: 110011
+S-Box 3 output: 1111
+S-Box 4 input: 110000
+S-Box 4 output: 1111
+S-Box 5 input: 101101
+S-Box 5 output: 0010
+S-Box 6 input: 110101
+S-Box 6 output: 0001
+S-Box 7 input: 101110
+S-Box 7 output: 1110
+S-Box 8 input: 001110
+S-Box 8 output: 0001
+PlainText after Round 04: 200ecb33 1f3464c0
+
+Round 5...
+Pre-Round Input: 200ecb33 1f3464c0
+Expansion Result: 0fe9a8309600
+Applied Key Result: 52c415f0c409S-Box 1 input: 010100
+S-Box 1 output: 0110
+S-Box 2 input: 101100
+S-Box 2 output: 1101
+S-Box 3 input: 010000
+S-Box 3 output: 0001
+S-Box 4 input: 010101
+S-Box 4 output: 0010
+S-Box 5 input: 111100
+S-Box 5 output: 0000
+S-Box 6 input: 001100
+S-Box 6 output: 0110
+S-Box 7 input: 010000
+S-Box 7 output: 0011
+S-Box 8 input: 001001
+S-Box 8 output: 1010
+PlainText after Round 05: 1f3464c0 2e640d2b
+
+Round 6...
+Pre-Round Input: 1f3464c0 2e640d2b
+Expansion Result: 95c30805a956
+Applied Key Result: 8eae95dde8deS-Box 1 input: 100011
+S-Box 1 output: 1100
+S-Box 2 input: 101010
+S-Box 2 output: 0100
+S-Box 3 input: 111010
+S-Box 3 output: 1010
+S-Box 4 input: 010101
+S-Box 4 output: 0010
+S-Box 5 input: 110111
+S-Box 5 output: 1001
+S-Box 6 input: 011110
+S-Box 6 output: 1011
+S-Box 7 input: 100011
+S-Box 7 output: 1011
+S-Box 8 input: 011110
+S-Box 8 output: 0111
+PlainText after Round 06: 2e640d2b 2cd6c9f5
+
+Round 7...
+Pre-Round Input: 2e640d2b 2cd6c9f5
+Expansion Result: 9596ad653faa
+Applied Key Result: aaff602f78aeS-Box 1 input: 101010
+S-Box 1 output: 0110
+S-Box 2 input: 101111
+S-Box 2 output: 0010
+S-Box 3 input: 111101
+S-Box 3 output: 0010
+S-Box 4 input: 100000
+S-Box 4 output: 1010
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 110111
+S-Box 6 output: 0111
+S-Box 7 input: 100010
+S-Box 7 output: 0100
+S-Box 8 input: 101110
+S-Box 8 output: 0010
+PlainText after Round 07: 2cd6c9f5 4e12afe7
+
+Round 8...
+Pre-Round Input: 2cd6c9f5 4e12afe7
+Expansion Result: a5c0a555ff0e
+Applied Key Result: 9a997edf3a0fS-Box 1 input: 100110
+S-Box 1 output: 1000
+S-Box 2 input: 101001
+S-Box 2 output: 0011
+S-Box 3 input: 100101
+S-Box 3 output: 1101
+S-Box 4 input: 111110
+S-Box 4 output: 0100
+S-Box 5 input: 110111
+S-Box 5 output: 1001
+S-Box 6 input: 110011
+S-Box 6 output: 1110
+S-Box 7 input: 101000
+S-Box 7 output: 1100
+S-Box 8 input: 001111
+S-Box 8 output: 0100
+PlainText after Round 08: 4e12afe7 596798dc
+
+Round 9...
+Pre-Round Input: 4e12afe7 596798dc
+Expansion Result: 2f2b0fcf16f8
+Applied Key Result: 9060d6ab24c2S-Box 1 input: 100100
+S-Box 1 output: 1110
+S-Box 2 input: 000110
+S-Box 2 output: 1110
+S-Box 3 input: 000011
+S-Box 3 output: 0111
+S-Box 4 input: 010110
+S-Box 4 output: 0101
+S-Box 5 input: 101010
+S-Box 5 output: 1101
+S-Box 6 input: 110010
+S-Box 6 output: 0000
+S-Box 7 input: 010011
+S-Box 7 output: 0011
+S-Box 8 input: 000010
+S-Box 8 output: 0010
+PlainText after Round 09: 596798dc a99d39f3
+
+Round 10...
+Pre-Round Input: 596798dc a99d39f3
+Expansion Result: d53cfa9f3fa7
+Applied Key Result: 7a6d017f07adS-Box 1 input: 011110
+S-Box 1 output: 0111
+S-Box 2 input: 100110
+S-Box 2 output: 1011
+S-Box 3 input: 110100
+S-Box 3 output: 0010
+S-Box 4 input: 000001
+S-Box 4 output: 1101
+S-Box 5 input: 011111
+S-Box 5 output: 0110
+S-Box 6 input: 110000
+S-Box 6 output: 0111
+S-Box 7 input: 011110
+S-Box 7 output: 0001
+S-Box 8 input: 101101
+S-Box 8 output: 1000
+PlainText after Round 10: a99d39f3 934b6a12
+
+Round 11...
+Pre-Round Input: a99d39f3 934b6a12
+Expansion Result: 4a6a56b540a5
+Applied Key Result: 65b92dc5618dS-Box 1 input: 011001
+S-Box 1 output: 1001
+S-Box 2 input: 011011
+S-Box 2 output: 1001
+S-Box 3 input: 100100
+S-Box 3 output: 0100
+S-Box 4 input: 101101
+S-Box 4 output: 1101
+S-Box 5 input: 110001
+S-Box 5 output: 0110
+S-Box 6 input: 010110
+S-Box 6 output: 0100
+S-Box 7 input: 000110
+S-Box 7 output: 1110
+S-Box 8 input: 001101
+S-Box 8 output: 0111
+PlainText after Round 11: 934b6a12 29026518
+
+Round 12...
+Pre-Round Input: 934b6a12 29026518
+Expansion Result: 15280430a8f0
+Applied Key Result: fbfb5362dbf0S-Box 1 input: 111110
+S-Box 1 output: 0000
+S-Box 2 input: 111111
+S-Box 2 output: 1001
+S-Box 3 input: 101101
+S-Box 3 output: 1000
+S-Box 4 input: 010011
+S-Box 4 output: 0111
+S-Box 5 input: 011000
+S-Box 5 output: 1101
+S-Box 6 input: 101101
+S-Box 6 output: 1111
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 110000
+S-Box 8 output: 0000
+PlainText after Round 12: 29026518 20371f1a
+
+Round 13...
+Pre-Round Input: 29026518 20371f1a
+Expansion Result: 1001ae8fe8f4
+Applied Key Result: f6d6d815ebfdS-Box 1 input: 111101
+S-Box 1 output: 0110
+S-Box 2 input: 101101
+S-Box 2 output: 0100
+S-Box 3 input: 011011
+S-Box 3 output: 1011
+S-Box 4 input: 011000
+S-Box 4 output: 1011
+S-Box 5 input: 000101
+S-Box 5 output: 0010
+S-Box 6 input: 011110
+S-Box 6 output: 1011
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 111101
+S-Box 8 output: 0110
+PlainText after Round 13: 20371f1a bf70c2ec
+
+Round 14...
+Pre-Round Input: 20371f1a bf70c2ec
+Expansion Result: 5feba1605759
+Applied Key Result: ab1dd3b250d8S-Box 1 input: 101010
+S-Box 1 output: 0110
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 110111
+S-Box 3 output: 0011
+S-Box 4 input: 010011
+S-Box 4 output: 0111
+S-Box 5 input: 101100
+S-Box 5 output: 0111
+S-Box 6 input: 100101
+S-Box 6 output: 0010
+S-Box 7 input: 000011
+S-Box 7 output: 0000
+S-Box 8 input: 011000
+S-Box 8 output: 0101
+PlainText after Round 14: bf70c2ec c45bc5be
+
+Round 15...
+Pre-Round Input: bf70c2ec c45bc5be
+Expansion Result: 6082f7e0bdfd
+Applied Key Result: 903c01627f78S-Box 1 input: 100100
+S-Box 1 output: 1110
+S-Box 2 input: 000011
+S-Box 2 output: 1101
+S-Box 3 input: 110000
+S-Box 3 output: 1011
+S-Box 4 input: 000001
+S-Box 4 output: 1101
+S-Box 5 input: 011000
+S-Box 5 output: 1101
+S-Box 6 input: 100111
+S-Box 6 output: 1100
+S-Box 7 input: 111101
+S-Box 7 output: 0011
+S-Box 8 input: 111000
+S-Box 8 output: 1111
+PlainText after Round 15: c45bc5be 00fe1d90
+
+Round 16...
+Pre-Round Input: c45bc5be 00fe1d90
+Expansion Result: 0017fc0fbca0
+Applied Key Result: f0a1927a9490S-Box 1 input: 111100
+S-Box 1 output: 0101
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 000110
+S-Box 3 output: 1110
+S-Box 4 input: 010010
+S-Box 4 output: 0010
+S-Box 5 input: 011110
+S-Box 5 output: 1001
+S-Box 6 input: 101001
+S-Box 6 output: 1001
+S-Box 7 input: 010010
+S-Box 7 output: 1100
+S-Box 8 input: 010000
+S-Box 8 output: 1010
+PlainText after Round 16: bd0024b9 00fe1d90
+
+
+For block 1...
+Round 1...
+Pre-Round Input: d03cdcf0 cf0367e3
+Expansion Result: e5e806b0ff07
+Applied Key Result: 0456a038bec2S-Box 1 input: 000001
+S-Box 1 output: 0000
+S-Box 2 input: 000101
+S-Box 2 output: 0100
+S-Box 3 input: 011010
+S-Box 3 output: 0100
+S-Box 4 input: 100000
+S-Box 4 output: 1010
+S-Box 5 input: 001110
+S-Box 5 output: 0110
+S-Box 6 input: 001011
+S-Box 6 output: 1100
+S-Box 7 input: 111011
+S-Box 7 output: 0010
+S-Box 8 input: 000010
+S-Box 8 output: 0010
+PlainText after Round 01: cf0367e3 c07bd828
+
+Round 2...
+Pre-Round Input: cf0367e3 c07bd828
+Expansion Result: 6003f7ef0151
+Applied Key Result: 98bd59ff3b63S-Box 1 input: 100110
+S-Box 1 output: 1000
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 110101
+S-Box 3 output: 1110
+S-Box 4 input: 011001
+S-Box 4 output: 0001
+S-Box 5 input: 111111
+S-Box 5 output: 0011
+S-Box 6 input: 110011
+S-Box 6 output: 1110
+S-Box 7 input: 101101
+S-Box 7 output: 1010
+S-Box 8 input: 100011
+S-Box 8 output: 0001
+PlainText after Round 02: c07bd828 3fa26a6e
+
+Round 3...
+Pre-Round Input: c07bd828 3fa26a6e
+Expansion Result: 1ffd0435435c
+Applied Key Result: c453a2855874S-Box 1 input: 110001
+S-Box 1 output: 0101
+S-Box 2 input: 000101
+S-Box 2 output: 0100
+S-Box 3 input: 001110
+S-Box 3 output: 0101
+S-Box 4 input: 100010
+S-Box 4 output: 0110
+S-Box 5 input: 100001
+S-Box 5 output: 1011
+S-Box 6 input: 010101
+S-Box 6 output: 1101
+S-Box 7 input: 100001
+S-Box 7 output: 0110
+S-Box 8 input: 110100
+S-Box 8 output: 1010
+PlainText after Round 03: 3fa26a6e fd286cb2
+
+Round 4...
+Pre-Round Input: 3fa26a6e fd286cb2
+Expansion Result: 7fa9503595a5
+Applied Key Result: a805fde7a78dS-Box 1 input: 101010
+S-Box 1 output: 0110
+S-Box 2 input: 000000
+S-Box 2 output: 1111
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 111101
+S-Box 4 output: 0010
+S-Box 5 input: 111001
+S-Box 5 output: 1010
+S-Box 6 input: 111010
+S-Box 6 output: 1101
+S-Box 7 input: 011110
+S-Box 7 output: 0001
+S-Box 8 input: 001101
+S-Box 8 output: 0111
+PlainText after Round 04: fd286cb2 6ce981d2
+
+Round 5...
+Pre-Round Input: fd286cb2 6ce981d2
+Expansion Result: 359753c03ea4
+Applied Key Result: 68baee006cadS-Box 1 input: 011010
+S-Box 1 output: 1001
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 101011
+S-Box 3 output: 1001
+S-Box 4 input: 101110
+S-Box 4 output: 1101
+S-Box 5 input: 000000
+S-Box 5 output: 0010
+S-Box 6 input: 000110
+S-Box 6 output: 1111
+S-Box 7 input: 110010
+S-Box 7 output: 1111
+S-Box 8 input: 101101
+S-Box 8 output: 1000
+PlainText after Round 05: 6ce981d2 23985979
+
+Round 6...
+Pre-Round Input: 6ce981d2 23985979
+Expansion Result: 907cf02f2bf2
+Applied Key Result: 8b116df76a7aS-Box 1 input: 100010
+S-Box 1 output: 0001
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 000101
+S-Box 3 output: 0000
+S-Box 4 input: 101101
+S-Box 4 output: 1101
+S-Box 5 input: 111101
+S-Box 5 output: 0101
+S-Box 6 input: 110110
+S-Box 6 output: 1010
+S-Box 7 input: 101001
+S-Box 7 output: 0001
+S-Box 8 input: 111010
+S-Box 8 output: 0011
+PlainText after Round 06: 23985979 9ec7d990
+
+Round 7...
+Pre-Round Input: 23985979 9ec7d990
+Expansion Result: 4fd60fef3ca1
+Applied Key Result: 70bfc2a57ba5S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 111111
+S-Box 3 output: 1100
+S-Box 4 input: 000010
+S-Box 4 output: 1101
+S-Box 5 input: 101001
+S-Box 5 output: 0001
+S-Box 6 input: 010111
+S-Box 6 output: 1110
+S-Box 7 input: 101110
+S-Box 7 output: 1110
+S-Box 8 input: 100101
+S-Box 8 output: 1110
+PlainText after Round 07: 9ec7d990 dbab4c10
+
+Round 8...
+Pre-Round Input: 9ec7d990 dbab4c10
+Expansion Result: 6f7d56a580a1
+Applied Key Result: 50248d2f45a0S-Box 1 input: 010100
+S-Box 1 output: 0110
+S-Box 2 input: 000010
+S-Box 2 output: 0001
+S-Box 3 input: 010010
+S-Box 3 output: 1101
+S-Box 4 input: 001101
+S-Box 4 output: 0000
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 110100
+S-Box 6 output: 0100
+S-Box 7 input: 010110
+S-Box 7 output: 0111
+S-Box 8 input: 100000
+S-Box 8 output: 0111
+PlainText after Round 08: dbab4c10 b8d01638
+
+Round 9...
+Pre-Round Input: dbab4c10 b8d01638
+Expansion Result: 5f16a00ac1f1
+Applied Key Result: e05d796ef3cbS-Box 1 input: 111000
+S-Box 1 output: 0011
+S-Box 2 input: 000101
+S-Box 2 output: 0100
+S-Box 3 input: 110101
+S-Box 3 output: 1110
+S-Box 4 input: 111001
+S-Box 4 output: 1100
+S-Box 5 input: 011011
+S-Box 5 output: 1001
+S-Box 6 input: 101111
+S-Box 6 output: 1010
+S-Box 7 input: 001111
+S-Box 7 output: 1010
+S-Box 8 input: 001011
+S-Box 8 output: 0011
+PlainText after Round 09: b8d01638 ea885347
+
+Round 10...
+Pre-Round Input: b8d01638 ea885347
+Expansion Result: f554502a6a0f
+Applied Key Result: 5a05abca5205S-Box 1 input: 010110
+S-Box 1 output: 1100
+S-Box 2 input: 100000
+S-Box 2 output: 0000
+S-Box 3 input: 010110
+S-Box 3 output: 0111
+S-Box 4 input: 101011
+S-Box 4 output: 0001
+S-Box 5 input: 110010
+S-Box 5 output: 1001
+S-Box 6 input: 100101
+S-Box 6 output: 0010
+S-Box 7 input: 001000
+S-Box 7 output: 1111
+S-Box 8 input: 000101
+S-Box 8 output: 1101
+PlainText after Round 10: ea885347 17619a1d
+
+Round 11...
+Pre-Round Input: ea885347 17619a1d
+Expansion Result: 8aeb03cf40fa
+Applied Key Result: a53878bf61d2S-Box 1 input: 101001
+S-Box 1 output: 0100
+S-Box 2 input: 010011
+S-Box 2 output: 0000
+S-Box 3 input: 100001
+S-Box 3 output: 0001
+S-Box 4 input: 111000
+S-Box 4 output: 0101
+S-Box 5 input: 101111
+S-Box 5 output: 1101
+S-Box 6 input: 110110
+S-Box 6 output: 1010
+S-Box 7 input: 000111
+S-Box 7 output: 0111
+S-Box 8 input: 010010
+S-Box 8 output: 1001
+PlainText after Round 11: 17619a1d 55bccf47
+
+Round 12...
+Pre-Round Input: 17619a1d 55bccf47
+Expansion Result: aabdf965ea0e
+Applied Key Result: 446eae37990eS-Box 1 input: 010001
+S-Box 1 output: 1010
+S-Box 2 input: 000110
+S-Box 2 output: 1110
+S-Box 3 input: 111010
+S-Box 3 output: 1010
+S-Box 4 input: 101110
+S-Box 4 output: 1101
+S-Box 5 input: 001101
+S-Box 5 output: 1101
+S-Box 6 input: 111001
+S-Box 6 output: 0110
+S-Box 7 input: 100100
+S-Box 7 output: 1011
+S-Box 8 input: 001110
+S-Box 8 output: 0001
+PlainText after Round 12: 55bccf47 f4cd8540
+
+Round 13...
+Pre-Round Input: 55bccf47 f4cd8540
+Expansion Result: 7a965bc0aa01
+Applied Key Result: 9c412d5aa908S-Box 1 input: 100111
+S-Box 1 output: 0010
+S-Box 2 input: 000100
+S-Box 2 output: 1000
+S-Box 3 input: 000100
+S-Box 3 output: 1001
+S-Box 4 input: 101101
+S-Box 4 output: 1101
+S-Box 5 input: 010110
+S-Box 5 output: 1111
+S-Box 6 input: 101010
+S-Box 6 output: 1000
+S-Box 7 input: 100100
+S-Box 7 output: 1011
+S-Box 8 input: 001000
+S-Box 8 output: 0110
+PlainText after Round 13: f4cd8540 e2b2d8a6
+
+Round 14...
+Pre-Round Input: f4cd8540 e2b2d8a6
+Expansion Result: 7055a56f150d
+Applied Key Result: 84a3d7bd128cS-Box 1 input: 100001
+S-Box 1 output: 1111
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 001111
+S-Box 3 output: 1010
+S-Box 4 input: 010111
+S-Box 4 output: 1100
+S-Box 5 input: 101111
+S-Box 5 output: 1101
+S-Box 6 input: 010001
+S-Box 6 output: 0110
+S-Box 7 input: 001010
+S-Box 7 output: 0000
+S-Box 8 input: 001100
+S-Box 8 output: 1011
+PlainText after Round 14: e2b2d8a6 9d635e0e
+
+Round 15...
+Pre-Round Input: e2b2d8a6 9d635e0e
+Expansion Result: 4fab06afc05d
+Applied Key Result: bf15f02d02d8S-Box 1 input: 101111
+S-Box 1 output: 0111
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 110000
+S-Box 4 output: 1111
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 010000
+S-Box 6 output: 0000
+S-Box 7 input: 001011
+S-Box 7 output: 1001
+S-Box 8 input: 011000
+S-Box 8 output: 0101
+PlainText after Round 15: 9d635e0e 00ff0341
+
+Round 16...
+Pre-Round Input: 9d635e0e 00ff0341
+Expansion Result: 8017fe806a02
+Applied Key Result: 70a190f54232S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 000110
+S-Box 3 output: 1110
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 111101
+S-Box 5 output: 0101
+S-Box 6 input: 010100
+S-Box 6 output: 0011
+S-Box 7 input: 001000
+S-Box 7 output: 1111
+S-Box 8 input: 110010
+S-Box 8 output: 0110
+PlainText after Round 16: 7f5c3b2b 00ff0341
+
+
+For block 1...
+Round 1...
+Pre-Round Input: 9341e30d c83d4886
+Expansion Result: 6501faa5140d
+Applied Key Result: 84bf5c2d55c8S-Box 1 input: 100001
+S-Box 1 output: 1111
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 111101
+S-Box 3 output: 0010
+S-Box 4 input: 011100
+S-Box 4 output: 0100
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 010101
+S-Box 6 output: 1101
+S-Box 7 input: 010111
+S-Box 7 output: 1100
+S-Box 8 input: 001000
+S-Box 8 output: 0110
+PlainText after Round 01: c83d4886 e3d751a2
+
+Round 2...
+Pre-Round Input: c83d4886 e3d751a2
+Expansion Result: 707eaeaa3d05
+Applied Key Result: 88c000ba0737S-Box 1 input: 100010
+S-Box 1 output: 0001
+S-Box 2 input: 001100
+S-Box 2 output: 0011
+S-Box 3 input: 000000
+S-Box 3 output: 1010
+S-Box 4 input: 000000
+S-Box 4 output: 0111
+S-Box 5 input: 101110
+S-Box 5 output: 1000
+S-Box 6 input: 100000
+S-Box 6 output: 1001
+S-Box 7 input: 011100
+S-Box 7 output: 0110
+S-Box 8 input: 110111
+S-Box 8 output: 0000
+PlainText after Round 02: e3d751a2 196d3d80
+
+Round 3...
+Pre-Round Input: e3d751a2 196d3d80
+Expansion Result: 0f2b5a9fbc00
+Applied Key Result: d485fc2fa728S-Box 1 input: 110101
+S-Box 1 output: 0011
+S-Box 2 input: 001000
+S-Box 2 output: 0110
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 111100
+S-Box 4 output: 1000
+S-Box 5 input: 001011
+S-Box 5 output: 0111
+S-Box 6 input: 111010
+S-Box 6 output: 1101
+S-Box 7 input: 011100
+S-Box 7 output: 0110
+S-Box 8 input: 101000
+S-Box 8 output: 1001
+PlainText after Round 03: 196d3d80 9bc27e7c
+
+Round 4...
+Pre-Round Input: 196d3d80 9bc27e7c
+Expansion Result: 4f7e043fc3f9
+Applied Key Result: 98d2a9edf1d1S-Box 1 input: 100110
+S-Box 1 output: 1000
+S-Box 2 input: 001101
+S-Box 2 output: 1000
+S-Box 3 input: 001010
+S-Box 3 output: 0011
+S-Box 4 input: 101001
+S-Box 4 output: 1010
+S-Box 5 input: 111011
+S-Box 5 output: 0100
+S-Box 6 input: 011111
+S-Box 6 output: 1000
+S-Box 7 input: 000111
+S-Box 7 output: 0111
+S-Box 8 input: 010001
+S-Box 8 output: 1100
+PlainText after Round 04: 9bc27e7c 07b139e4
+
+Round 5...
+Pre-Round Input: 9bc27e7c 07b139e4
+Expansion Result: 00fda29f3f08
+Applied Key Result: 5dd01f5f6d01S-Box 1 input: 010111
+S-Box 1 output: 1011
+S-Box 2 input: 011101
+S-Box 2 output: 1011
+S-Box 3 input: 000000
+S-Box 3 output: 1010
+S-Box 4 input: 011111
+S-Box 4 output: 1001
+S-Box 5 input: 010111
+S-Box 5 output: 1010
+S-Box 6 input: 110110
+S-Box 6 output: 1010
+S-Box 7 input: 110100
+S-Box 7 output: 0110
+S-Box 8 input: 000001
+S-Box 8 output: 0001
+PlainText after Round 05: 07b139e4 4a7a31ba
+
+Round 6...
+Pre-Round Input: 07b139e4 4a7a31ba
+Expansion Result: 2543f41a3df4
+Applied Key Result: 3e2e69c27c7cS-Box 1 input: 001111
+S-Box 1 output: 0001
+S-Box 2 input: 100010
+S-Box 2 output: 1110
+S-Box 3 input: 111001
+S-Box 3 output: 1011
+S-Box 4 input: 101001
+S-Box 4 output: 1010
+S-Box 5 input: 110000
+S-Box 5 output: 1111
+S-Box 6 input: 100111
+S-Box 6 output: 1100
+S-Box 7 input: 110001
+S-Box 7 output: 1001
+S-Box 8 input: 111100
+S-Box 8 output: 0101
+PlainText after Round 06: 4a7a31ba 70fd301b
+
+Round 7...
+Pre-Round Input: 4a7a31ba 70fd301b
+Expansion Result: ba17fa9a00f6
+Applied Key Result: 857e37d047f2S-Box 1 input: 100001
+S-Box 1 output: 1111
+S-Box 2 input: 010111
+S-Box 2 output: 1010
+S-Box 3 input: 111000
+S-Box 3 output: 0101
+S-Box 4 input: 110111
+S-Box 4 output: 1011
+S-Box 5 input: 110100
+S-Box 5 output: 1100
+S-Box 6 input: 000100
+S-Box 6 output: 1010
+S-Box 7 input: 011111
+S-Box 7 output: 0110
+S-Box 8 input: 110010
+S-Box 8 output: 0110
+PlainText after Round 07: 70fd301b 9f85b7d8
+
+Round 8...
+Pre-Round Input: 70fd301b 9f85b7d8
+Expansion Result: 4ffc0bdafef1
+Applied Key Result: 70a5d0503bf0S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001010
+S-Box 2 output: 1011
+S-Box 3 input: 010111
+S-Box 3 output: 1110
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 010100
+S-Box 5 output: 0011
+S-Box 6 input: 000011
+S-Box 6 output: 1111
+S-Box 7 input: 101111
+S-Box 7 output: 0111
+S-Box 8 input: 110000
+S-Box 8 output: 0000
+PlainText after Round 08: 9f85b7d8 82c45597
+
+Round 9...
+Pre-Round Input: 9f85b7d8 82c45597
+Expansion Result: c056082abcaf
+Applied Key Result: 7f1dd14e8e95S-Box 1 input: 011111
+S-Box 1 output: 1000
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 110111
+S-Box 3 output: 0011
+S-Box 4 input: 010001
+S-Box 4 output: 0100
+S-Box 5 input: 010011
+S-Box 5 output: 0000
+S-Box 6 input: 101000
+S-Box 6 output: 0010
+S-Box 7 input: 111010
+S-Box 7 output: 0101
+S-Box 8 input: 010101
+S-Box 8 output: 0110
+PlainText after Round 09: 82c45597 d93fe7fc
+
+Round 10...
+Pre-Round Input: 82c45597 d93fe7fc
+Expansion Result: 6f29fff0fff9
+Applied Key Result: c0780410c7f3S-Box 1 input: 110000
+S-Box 1 output: 1111
+S-Box 2 input: 000111
+S-Box 2 output: 0111
+S-Box 3 input: 100000
+S-Box 3 output: 1101
+S-Box 4 input: 000100
+S-Box 4 output: 1110
+S-Box 5 input: 000100
+S-Box 5 output: 0100
+S-Box 6 input: 001100
+S-Box 6 output: 0110
+S-Box 7 input: 011111
+S-Box 7 output: 0110
+S-Box 8 input: 110011
+S-Box 8 output: 1100
+PlainText after Round 10: d93fe7fc ce3182ed
+
+Round 11...
+Pre-Round Input: d93fe7fc ce3182ed
+Expansion Result: e5c1a3c0575b
+Applied Key Result: ca12d8b07673S-Box 1 input: 110010
+S-Box 1 output: 1100
+S-Box 2 input: 100001
+S-Box 2 output: 1101
+S-Box 3 input: 001011
+S-Box 3 output: 0100
+S-Box 4 input: 011000
+S-Box 4 output: 1011
+S-Box 5 input: 101100
+S-Box 5 output: 0111
+S-Box 6 input: 000111
+S-Box 6 output: 0010
+S-Box 7 input: 011001
+S-Box 7 output: 0010
+S-Box 8 input: 110011
+S-Box 8 output: 1100
+PlainText after Round 11: ce3182ed 71d2230c
+
+Round 12...
+Pre-Round Input: ce3182ed 71d2230c
+Expansion Result: 3a3ea4106858
+Applied Key Result: d4edf3421b58S-Box 1 input: 110101
+S-Box 1 output: 0011
+S-Box 2 input: 001110
+S-Box 2 output: 0100
+S-Box 3 input: 110111
+S-Box 3 output: 0011
+S-Box 4 input: 110011
+S-Box 4 output: 0100
+S-Box 5 input: 010000
+S-Box 5 output: 1000
+S-Box 6 input: 100001
+S-Box 6 output: 0100
+S-Box 7 input: 101101
+S-Box 7 output: 1010
+S-Box 8 input: 011000
+S-Box 8 output: 0101
+PlainText after Round 12: 71d2230c cb319cd2
+
+Round 13...
+Pre-Round Input: 71d2230c cb319cd2
+Expansion Result: 6569a3cf96a5
+Applied Key Result: 83bed55595acS-Box 1 input: 100000
+S-Box 1 output: 0100
+S-Box 2 input: 111011
+S-Box 2 output: 0101
+S-Box 3 input: 111011
+S-Box 3 output: 0101
+S-Box 4 input: 010101
+S-Box 4 output: 0010
+S-Box 5 input: 010101
+S-Box 5 output: 1111
+S-Box 6 input: 011001
+S-Box 6 output: 0000
+S-Box 7 input: 010110
+S-Box 7 output: 0111
+S-Box 8 input: 101100
+S-Box 8 output: 1110
+PlainText after Round 13: cb319cd2 5e85e7bc
+
+Round 14...
+Pre-Round Input: cb319cd2 5e85e7bc
+Expansion Result: 2fd40bf0fdf8
+Applied Key Result: db227922fa79S-Box 1 input: 110110
+S-Box 1 output: 0111
+S-Box 2 input: 110010
+S-Box 2 output: 1000
+S-Box 3 input: 001001
+S-Box 3 output: 0011
+S-Box 4 input: 111001
+S-Box 4 output: 1100
+S-Box 5 input: 001000
+S-Box 5 output: 0111
+S-Box 6 input: 101111
+S-Box 6 output: 1010
+S-Box 7 input: 101001
+S-Box 7 output: 0001
+S-Box 8 input: 111001
+S-Box 8 output: 0011
+PlainText after Round 14: 5e85e7bc fd1f0614
+
+Round 15...
+Pre-Round Input: 5e85e7bc fd1f0614
+Expansion Result: 7fa8fe80c0a9
+Applied Key Result: 8f160802022cS-Box 1 input: 100011
+S-Box 1 output: 1100
+S-Box 2 input: 110001
+S-Box 2 output: 1011
+S-Box 3 input: 011000
+S-Box 3 output: 1011
+S-Box 4 input: 001000
+S-Box 4 output: 0000
+S-Box 5 input: 000000
+S-Box 5 output: 0010
+S-Box 6 input: 100000
+S-Box 6 output: 1001
+S-Box 7 input: 001000
+S-Box 7 output: 1111
+S-Box 8 input: 101100
+S-Box 8 output: 1110
+PlainText after Round 15: fd1f0614 001f0219
+
+Round 16...
+Pre-Round Input: fd1f0614 001f0219
+Expansion Result: 8000fe8040f2
+Applied Key Result: 70b690f568c2S-Box 1 input: 011100
+S-Box 1 output: 0000
+S-Box 2 input: 001011
+S-Box 2 output: 0010
+S-Box 3 input: 011010
+S-Box 3 output: 0100
+S-Box 4 input: 010000
+S-Box 4 output: 0001
+S-Box 5 input: 111101
+S-Box 5 output: 0101
+S-Box 6 input: 010110
+S-Box 6 output: 0100
+S-Box 7 input: 100011
+S-Box 7 output: 1011
+S-Box 8 input: 000010
+S-Box 8 output: 0010
+PlainText after Round 16: 1f18021d 001f0219
+
+
+Final PlainText (Hex): 49 20 6c 69 6b 65 20 63 6f 6d 70 75 74 65 72 20 63 6c 61 73 73 00 00 00
+Final PlainText (String)I like computer class   
+
+
+
+
