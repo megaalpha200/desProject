@@ -155,10 +155,10 @@ private fun desBinEncryptDecrypt(mode: Mode, inputTextBin: String, roundKeys: Li
     for (round in 0 until 16) {
         println("Round ${round+1}...")
 
-        tempRoundInputText = if (round + 1 == 16)
-            roundFunction(tempRoundInputText, roundKeys[round], swapLastRound)
+        tempRoundInputText = if ((mode == Mode.ENCRYPT && round + 1 == 16) || (mode == Mode.DECRYPT && round + 1 == 1))
+            roundFunction(mode, tempRoundInputText, roundKeys[round], swapLastRound)
         else
-            roundFunction(tempRoundInputText, roundKeys[round])
+            roundFunction(mode, tempRoundInputText, roundKeys[round])
 
         println("${if (mode == Mode.ENCRYPT) "CipherText" else if (mode == Mode.DECRYPT) "PlainText" else ""} after Round ${(round + 1).toString().padStart(2, '0')}: ${convertBinToHex(tempRoundInputText).chunked(8).joinToString(" ")}")
         println(System.lineSeparator())
@@ -213,7 +213,7 @@ private fun generateRoundKeys(key: String, mode: Mode) : List<String> {
 
 /*--------------------------------Round Functions-------------------------------------*/
 
-private fun roundFunction(input: String, key: String, swap: Boolean = true) : String {
+private fun roundFunction(mode: Mode,input: String, key: String, swap: Boolean = true) : String {
     val leftInput = input.subSequence(0, (input.length / 2)).toString()
     val rightInput = input.subSequence((input.length / 2), input.length).toString()
 
@@ -222,9 +222,13 @@ private fun roundFunction(input: String, key: String, swap: Boolean = true) : St
     val leftOutput: String
     val rightOutput: String
 
-    if (swap) {
+    if (swap && mode == Mode.ENCRYPT) {
         leftOutput = rightInput
         rightOutput = xorBinaryBlocks(leftInput, innerRoundFunction(rightInput, key))
+    }
+    else if (swap && mode == Mode.DECRYPT) {
+        leftOutput = xorBinaryBlocks(rightInput, innerRoundFunction(leftInput, key))
+        rightOutput = leftInput
     }
     else {
         leftOutput = xorBinaryBlocks(leftInput, innerRoundFunction(rightInput, key))

@@ -123,7 +123,7 @@ void decrypt(string, string, bool);
 string desPrep(Mode, string, string, bool);
 string desBinEncryptDecrypt(Mode, string, vector<string>&, bool);
 void generateRoundKeys(string, Mode, vector<string>&);
-string roundFunction(string, string, bool = true);
+string roundFunction(Mode, string, string, bool = true);
 string innerRoundFunction(string, string);
 string xorBinaryBlocks(string, string);
 string applyPBox(string, const vector<int>&);
@@ -451,10 +451,10 @@ void encrypt(string plainTextBin, string initialKeyBin, bool swapLastRound)
 	chunkString(cipherTextHex, 2, chunkedCipherTextHex);
 
 	cout << "Final CipherText (Hex): " << joinToString(chunkedCipherTextHex, " ") << endl;
-	cout << "Final CipherText (String)" << cipherTextStr << endl;
+	cout << "Final CipherText (String): " << cipherTextStr << endl;
 
 	outputStream << "Final CipherText (Hex): " << joinToString(chunkedCipherTextHex, " ") << endl;
-	outputStream << "Final CipherText (String)" << cipherTextStr << endl;
+	outputStream << "Final CipherText (String): " << cipherTextStr << endl;
 }
 
 void decrypt(string cipherTextBin, string initialKeyBin, bool swapLastRound)
@@ -466,10 +466,10 @@ void decrypt(string cipherTextBin, string initialKeyBin, bool swapLastRound)
 	chunkString(plainTextHex, 2, chunkedPlainTextHex);
 
 	cout << "Final PlainText (Hex): " << joinToString(chunkedPlainTextHex, " ") << endl;
-	cout << "Final PlainText (String)" << plainTextStr << endl;
+	cout << "Final PlainText (String): " << plainTextStr << endl;
 
 	outputStream << "Final PlainText (Hex): " << joinToString(chunkedPlainTextHex, " ") << endl;
-	outputStream << "Final PlainText (String)" << plainTextStr << endl;
+	outputStream << "Final PlainText (String): " << plainTextStr << endl;
 }
 
 /*---------------------------------------------------------------------------------------------*/
@@ -513,10 +513,10 @@ string desBinEncryptDecrypt(Mode mode, string inputTextBin, vector<string> &roun
 	{
 		outputStream << "Round " << (round + 1) << "..." << endl;
 
-		if (round + 1 == 16)
-			tempRoundInputText = roundFunction(tempRoundInputText, roundKeys[round], swapLastRound);
+		if ((mode == Mode::ENCRYPT && round + 1 == 16) || (mode == Mode::DECRYPT && round + 1 == 1))
+			tempRoundInputText = roundFunction(mode, tempRoundInputText, roundKeys[round], swapLastRound);
 		else
-			tempRoundInputText = roundFunction(tempRoundInputText, roundKeys[round]);
+			tempRoundInputText = roundFunction(mode, tempRoundInputText, roundKeys[round]);
 
 		vector<string> chunkedTempRoundInputText;
 		chunkString(convertBinToHex(tempRoundInputText), 8, chunkedTempRoundInputText);
@@ -589,7 +589,7 @@ void generateRoundKeys(string key, Mode mode, vector<string> &roundKeys)
 
 /*--------------------------------Round Functions-------------------------------------*/
 
-string roundFunction(string input, string key, bool swap)
+string roundFunction(Mode mode, string input, string key, bool swap)
 {
 	string leftInput = input.substr(0, (input.length() / 2));
 	string rightInput = input.substr((input.length() / 2));
@@ -599,10 +599,15 @@ string roundFunction(string input, string key, bool swap)
 	string leftOutput;
 	string rightOutput;
 
-	if (swap)
+	if (mode == Mode::ENCRYPT && swap)
 	{
 		leftOutput = rightInput;
 		rightOutput = xorBinaryBlocks(leftInput, innerRoundFunction(rightInput, key));
+	}
+	else if (mode == Mode::DECRYPT && swap)
+	{
+		leftOutput = xorBinaryBlocks(rightInput, innerRoundFunction(leftInput, key));
+		rightOutput = leftInput;
 	}
 	else
 	{

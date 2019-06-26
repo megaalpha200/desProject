@@ -151,10 +151,10 @@ public class DesMainFunctions {
         for (int round = 0; round < 16; round++) {
             System.out.println("Round " + (round+1) + "...");
 
-            if (round + 1 == 16)
-                tempRoundInputText = roundFunction(tempRoundInputText, roundKeys.get(round), swapLastRound);
+            if ((mode == Mode.ENCRYPT && round + 1 == 16) || (mode == Mode.DECRYPT && round + 1 == 1))
+                tempRoundInputText = roundFunction(mode, tempRoundInputText, roundKeys.get(round), swapLastRound);
             else
-                tempRoundInputText = roundFunction(tempRoundInputText, roundKeys.get(round), true);
+                tempRoundInputText = roundFunction(mode, tempRoundInputText, roundKeys.get(round), true);
 
             System.out.println((mode == Mode.ENCRYPT) ? "CipherText" : "PlainText" + " after Round " + StringManipulations.padLeftWithZeros(String.valueOf(round+1), 2) + ": "
                     + String.join(" ", StringManipulations.chunkString(TextConversions.convertBinToHex(tempRoundInputText), 8)));
@@ -224,7 +224,7 @@ public class DesMainFunctions {
 
     /*--------------------------------Round Functions-------------------------------------*/
 
-    private static String roundFunction(String input, String key, boolean swap) {
+    private static String roundFunction(Mode mode, String input, String key, boolean swap) {
         final String leftInput = input.substring(0, (input.length() / 2));
         final String rightInput = input.substring((input.length() / 2));
 
@@ -233,9 +233,13 @@ public class DesMainFunctions {
         final String leftOutput;
         final String rightOutput;
 
-        if (swap) {
+        if (swap && mode == Mode.ENCRYPT) {
             leftOutput = rightInput;
             rightOutput = xorBinaryBlocks(leftInput, innerRoundFunction(rightInput, key));
+        }
+        else if (swap && mode == Mode.DECRYPT) {
+            leftOutput = xorBinaryBlocks(rightInput, innerRoundFunction(leftInput, key));
+            rightOutput = leftInput;
         }
         else {
             leftOutput = xorBinaryBlocks(leftInput, innerRoundFunction(rightInput, key));
