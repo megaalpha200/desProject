@@ -1,0 +1,4 @@
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des\\src\\DesMainFunctions.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des\\src\\Main.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des\\src\\stringmanip\\StringManipulations.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des\\src\\textconversions\\TextConversions.java"

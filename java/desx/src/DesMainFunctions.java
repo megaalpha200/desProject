@@ -115,6 +115,10 @@ public class DesMainFunctions {
         }
     }
 
+    public static void main(String[] args) {
+        //generateRoundKeys(TextConversions.convertStringToBin("Computer"), Mode.ENCRYPT);
+    }
+
     public static String desPrep(Mode mode, String inputText, String key, boolean swapLastRound) {
         final StringBuilder finalResult = new StringBuilder();
         final String inputTextBin = inputText;
