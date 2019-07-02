@@ -1,0 +1,5 @@
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des(GUI)\\src\\DesForm.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des(GUI)\\src\\desfunctions\\DesMain.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des(GUI)\\src\\desfunctions\\DesMainFunctions.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des(GUI)\\src\\stringmanip\\StringManipulations.java"
+"D:\\Users\\Jose A. Alvarado\\MEGA\\Research - Dr. Li\\Assignment1\\DES\\desProject\\java\\des(GUI)\\src\\textconversions\\TextConversions.java"
