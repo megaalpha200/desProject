@@ -2,51 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51834bf7-e91c-4e7e-968b-1e72a3c6842d" name="Default Changelist" comment="Added extra padding for key&#10;&#10;*Added extra padding for any key shorter than 64-bits.">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/Source.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/debug.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/des.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/des.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/des.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/DesMainFunctions$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/DesMainFunctions$Mode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/DesMainFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/Main$WrongMenuChoiceException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/stringmanip/StringManipulations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/classes/textconversions/TextConversions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/des.jcp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/des.jcu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/des.jcw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/src/DesMainFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/src/stringmanip/StringManipulations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/src/textconversions/TextConversions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/des/src_des.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/des.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/src/DesMainFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/src/stringmanip/StringManipulations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/desx/src/textconversions/TextConversions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/des.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/DESFunctions/desMainFunctions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/TextConversions/conversions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/main.kt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../des(GUI)/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_innoventsolutions_birt_runtime_org_apache_commons_codec_1_9_0_v20170208_1614_4_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/des(GUI).iml" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/des(GUI).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/src/main/kotlin/com/example/demo/DESFunctions/DesMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/src/main/kotlin/com/example/demo/DESFunctions/DesMain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/src/main/kotlin/com/example/demo/TextConversions/conversions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/src/main/kotlin/com/example/demo/TextConversions/conversions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/des.iml" beforeDir="false" afterPath="$PROJECT_DIR$/des.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextConversions/conversions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextConversions/conversions.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
+            <state relative-caret-position="2040">
               <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#304#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +39,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TextConversions/conversions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="462">
+              <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+              <folding>
+                <element signature="e#25#98#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="117" selection-start-line="117" selection-end-line="123" selection-end-column="1" />
+            <state relative-caret-position="313">
+              <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -122,7 +89,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="640" />
     <option name="width" value="640" />
     <option name="height" value="984" />
@@ -134,6 +107,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,16 +136,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../AES/aesProject/java/aes(cmd)x" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -187,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Kotlin.TextConversions.ConversionsKt">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -292,9 +272,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TextConversions.ConversionsKt" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.DESFunctions.DesMainFunctionsKt" />
-        <item itemvalue="Kotlin.TextConversions.ConversionsKt" />
         <item itemvalue="Kotlin.DESFunctions.DesKeyFunctionsKt" />
         <item itemvalue="Kotlin.DESFunctions.BoxFunctionsKt" />
       </list>
@@ -339,6 +319,7 @@
       <workItem from="1561063267989" duration="1255000" />
       <workItem from="1561525190388" duration="1050000" />
       <workItem from="1561921359246" duration="8731000" />
+      <workItem from="1562783673794" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1555783391551</created>
@@ -365,7 +346,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145093000" />
+    <option name="totallyTimeSpent" value="147238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,24 +358,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28317153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28744328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.328341" />
@@ -404,7 +385,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Flutter Inspector" order="6" />
       <window_info anchor="right" id="Flutter Outline" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -447,36 +428,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt">
+    <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="117" selection-start-line="117" selection-end-line="123" selection-end-column="1" />
+        <state relative-caret-position="2040">
+          <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.kt">
+    <entry file="file://$PROJECT_DIR$/src/DESFunctions/desMainFunctions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#304#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="313">
+          <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TextConversions/conversions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="462">
+          <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+          <folding>
+            <element signature="e#25#98#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>des</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>KotlinJavaRuntime</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

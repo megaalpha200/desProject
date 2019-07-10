@@ -23,20 +23,24 @@ object DesMain {
 
         var inputTextBin = ""
 
-        when (textMode) {
-            TextMode.STRING -> {
-                val inputTextHex = TextConversions.convertStringToHex(inputText)
-                inputTextBin = TextConversions.convertHexToBin(inputTextHex)
-                debugOutput.append("Hex: ${inputTextHex.chunked(2).joinToString(" ")}${System.lineSeparator()}")
-                debugOutput.append("Binary: ${inputTextBin.chunked(8).joinToString(" ")}${System.lineSeparator()}")
-            }
-            TextMode.HEX -> {
-                inputText = inputText.replace("\\s".toRegex(), "")
+        if (cipherMode == desMainFunctions.CipherMode.ENCRYPT && textMode == desMainFunctions.TextMode.STRING) {
+            val inputTextHex = TextConversions.convertStringToHex(inputText)
+            inputTextBin = TextConversions.convertHexToBin(inputTextHex)
+            debugOutput.append("Hex: ${inputTextHex.chunked(2).joinToString(" ")}${System.lineSeparator()}")
+            debugOutput.append("Binary: ${inputTextBin.chunked(8).joinToString(" ")}${System.lineSeparator()}")
+        }
+        else if (cipherMode == desMainFunctions.CipherMode.DECRYPT && textMode == desMainFunctions.TextMode.STRING) {
+            val inputTextHex = TextConversions.convertBase64StringToHex(inputText)
+            inputTextBin = TextConversions.convertHexToBin(inputTextHex)
+            debugOutput.append("Hex: ${inputTextHex.chunked(2).joinToString(" ")}${System.lineSeparator()}")
+            debugOutput.append("Binary: ${inputTextBin.chunked(8).joinToString(" ")}${System.lineSeparator()}")
+        }
+        else if (textMode == desMainFunctions.TextMode.HEX) {
+            inputText = inputText.replace("\\s".toRegex(), "")
 
-                inputTextBin = TextConversions.convertHexToBin(inputText)
-                debugOutput.append("Hex: ${inputText.chunked(2).joinToString(" ")}${System.lineSeparator()}")
-                debugOutput.append("Binary: ${inputTextBin.chunked(8).joinToString(" ")}${System.lineSeparator()}")
-            }
+            inputTextBin = TextConversions.convertHexToBin(inputText)
+            debugOutput.append("Hex: ${inputText.chunked(2).joinToString(" ")}${System.lineSeparator()}")
+            debugOutput.append("Binary: ${inputTextBin.chunked(8).joinToString(" ")}${System.lineSeparator()}")
         }
 
         debugOutput.append(System.lineSeparator())
@@ -77,12 +81,12 @@ object DesMain {
 
     fun encrypt(plainTextBin: String, initialKeyBin: String, swapLastRound: Boolean): Pair<String, String> {
         val cipherTextHex = TextConversions.convertBinToHex(desMainFunctions.desPrep(CipherMode.ENCRYPT, plainTextBin, initialKeyBin, swapLastRound))
-        val cipherTextStr = TextConversions.convertHexToString(cipherTextHex)
+        val cipherTextStr = TextConversions.convertHexToBase64String(cipherTextHex)
 
         val chunkedCipherTextHexStr = cipherTextHex.chunked(2).joinToString(" ")
 
         debugOutput.append("Final CipherText (Hex): $chunkedCipherTextHexStr${System.lineSeparator()}")
-        debugOutput.append("Final CipherText (String): $cipherTextStr${System.lineSeparator()}")
+        debugOutput.append("Final CipherText (Base64 String): $cipherTextStr${System.lineSeparator()}")
 
         return Pair(chunkedCipherTextHexStr, cipherTextStr)
     }
