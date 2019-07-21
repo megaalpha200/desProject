@@ -9,10 +9,6 @@ function shiftedString = shiftBitsLeft( input, shiftBy )
     modShiftVal = mod(shiftBy, inputCSize);
     shiftedString = '';
     
-    shiftedString = horzcat(shiftedString, input(modShiftVal+1:end));
-    
-    for i = 1:modShiftVal
-        shiftedString = horzcat(shiftedString, input(i));
-    end
+    shiftedString = horzcat(shiftedString, input(modShiftVal+1:end), input(1:modShiftVal));
 end
 

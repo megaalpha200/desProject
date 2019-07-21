@@ -62,7 +62,7 @@ object DesMain {
                 val initialKeyHex = TextConversions.convertStringToHex(initialKey)
                 initialKeyBin = TextConversions.convertHexToBin(initialKeyHex)
 
-                debugOutput.append("Hex: ${initialKey.chunked(2).joinToString(" ")}${System.lineSeparator()}")
+                debugOutput.append("Hex: ${initialKeyHex.chunked(2).joinToString(" ")}${System.lineSeparator()}")
                 debugOutput.append("Binary: ${initialKeyBin.chunked(8).joinToString(" ")}${System.lineSeparator()}")
             }
             TextMode.HEX -> {

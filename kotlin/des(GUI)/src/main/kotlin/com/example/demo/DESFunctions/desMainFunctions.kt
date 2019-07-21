@@ -284,19 +284,10 @@ object desMainFunctions {
     }
 
     fun applyPBox(input: String, pBox: Array<Int>) : String {
-        val output = StringBuilder("")
-        val outputArrayList = arrayListOf<Char>()
-
-        for(i in 1..pBox.size) {
-            outputArrayList.add('0')
-        }
+        val output = StringBuilder("".padStart(pBox.size, '0'))
 
         pBox.forEachIndexed { index, it ->
-            outputArrayList[index] = input[(it-1)]
-        }
-
-        outputArrayList.forEach {
-            output.append(it)
+            output[index] = input[(it-1)]
         }
 
         return output.toString()
@@ -311,15 +302,8 @@ object desMainFunctions {
 
     fun shiftBitsLeft(input: String, shiftBy: Int = 1) : String {
         val modShiftVal = shiftBy % (input.length)
-        val shiftedString = StringBuilder("")
 
-        shiftedString.append(input.substring(modShiftVal))
-
-        for(i in 0..(modShiftVal - 1)) {
-            shiftedString.append(input[i])
-        }
-
-        return shiftedString.toString()
+        return input.substring(modShiftVal) + input.substring(0, modShiftVal)
     }
 
     fun binSplit(input: String, blockSize: Int) : List<String> {

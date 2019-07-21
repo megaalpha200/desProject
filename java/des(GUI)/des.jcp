@@ -27,7 +27,8 @@
 		</runtime>
 	</runtimes>
 	<libraries>
-		<library_ref>Forms</library_ref>
+		<library_ref>Forms (DES)</library_ref>
+		<library_ref>Apache Codec (DES)</library_ref>
 	</libraries>
 	<files>
 		<include>

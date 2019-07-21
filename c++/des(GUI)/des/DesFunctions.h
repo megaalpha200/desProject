@@ -10,6 +10,7 @@
 #include <math.h>
 #include <exception>
 #include <algorithm>
+#include "base64.h"
 
 namespace DesFunctions
 {
@@ -173,24 +174,27 @@ namespace DesFunctions
 		std::vector<std::string> chunkedInputTextHex;
 		std::vector<std::string> chunkedInputTextBin;
 
-		switch (textMode)
+		if (cipherMode == CipherMode::ENCRYPT && textMode == TextMode::STRING)
 		{
-		case TextMode::STRING:
 			inputTextBin = convertStringToBin(inputText);
-			break;
-		case TextMode::HEX:
+		}
+		else if (cipherMode == CipherMode::DECRYPT && textMode == TextMode::STRING)
+		{
+			std::string decodedBase64Str = base64_decode(inputText);
+			inputTextBin = convertStringToBin(decodedBase64Str);
+		}
+		else if (textMode == TextMode::HEX)
+		{
 			removeSpaces(inputText);
 			inputTextBin = convertHexToBin(inputText);
-			
+
 			chunkString(inputText, 2, chunkedInputTextHex);
 			chunkString(inputTextBin, 8, chunkedInputTextBin);
 			outputStream << "Hex: " << joinToString(chunkedInputTextHex, " ") << std::endl;
 			outputStream << "Binary: " << joinToString(chunkedInputTextBin, " ") << std::endl;
-			break;
-		default:
-			throw std::exception("An unexpected error has occured!");
-			break;
 		}
+		else
+			throw std::exception("An unexpected error has occured!");
 
 		outputStream << std::endl;
 
@@ -242,9 +246,9 @@ namespace DesFunctions
 		std::string chunkedCipherTextHexStr = joinToString(chunkedCipherTextHex, " ");
 
 		outputStream << "Final CipherText (Hex): " << chunkedCipherTextHexStr << std::endl;
-		outputStream << "Final CipherText (String): " << cipherTextStr << std::endl;
+		outputStream << "Final CipherText (Base64 String): " << base64_encode((unsigned char *)cipherTextStr.c_str(), cipherTextStr.size()) << std::endl;
 
-		outputPair =  std::pair<std::string, std::string>(chunkedCipherTextHexStr, cipherTextStr);
+		outputPair =  std::pair<std::string, std::string>(chunkedCipherTextHexStr, base64_encode((unsigned char*)cipherTextStr.c_str(), cipherTextStr.size()));
 	}
 
 	static void decrypt(std::string cipherTextBin, std::string initialKeyBin, bool swapLastRound, std::pair<std::string, std::string> &outputPair)
@@ -492,11 +496,7 @@ namespace DesFunctions
 		std::string shiftedString = "";
 
 		shiftedString += input.substr(modShiftVal);
-
-		for (int i = 0; i < modShiftVal; i++)
-		{
-			shiftedString += input[i];
-		}
+		shiftedString += input.substr(0, modShiftVal);
 
 		return shiftedString;
 	}
@@ -504,24 +504,18 @@ namespace DesFunctions
 	/*----------------------------------------------------------------------------------*/
 
 	/*------------------------------------------------String Manipulation Functions------------------------------------------------*/
-	static void chunkString(std::string s, int size, std::vector<std::string> &chunkedList)
+	void chunkString(std::string s, int size, std::vector<std::string>& chunkedList)
 	{
 		int startIndex = 0;
 		int endIndex = size;
 
-		while (endIndex <= s.length())
+		while (startIndex != endIndex)
 		{
 			chunkedList.push_back(s.substr(startIndex, size));
 			startIndex += size;
-			endIndex += size;
-		}
 
-		if (endIndex > s.length())
-		{
-			int diff = endIndex - s.length();
-			std::string subStr = s.substr(startIndex, (size - diff));
-			if (subStr != "")
-				chunkedList.push_back(subStr);
+			if (endIndex < s.length())
+				endIndex += size;
 		}
 	}
 

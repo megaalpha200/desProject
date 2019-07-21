@@ -2,51 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="078aa43a-b349-4ad1-89d4-4e3fa53d6e14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/Source.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/debug.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/des.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/des.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/des/des/des.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/DesMainFunctions$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/DesMainFunctions$Mode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/DesMainFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/Main$WrongMenuChoiceException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/stringmanip/StringManipulations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/classes/textconversions/TextConversions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/des.jcp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/des.jcu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/des.jcw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/DesMainFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/stringmanip/StringManipulations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src/textconversions/TextConversions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../des/src_des.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/des.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/src/DesMainFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/src/stringmanip/StringManipulations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desx/src/textconversions/TextConversions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/des.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/src/DESFunctions/desMainFunctions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/src/TextConversions/conversions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kotlin/des/src/main.kt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_directory_studio_org_apache_commons_codec_1_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/des(GUI)/des/DesForm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/des(GUI)/des/DesForm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/des(GUI)/des/DesFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/des(GUI)/des/DesFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/des(GUI)/des/des.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/des.jcp" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/des.jcp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/des.jcw" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/des.jcw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/src/DesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/src/DesForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/src/desfunctions/DesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/src/desfunctions/DesMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/src/forms_rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../des(GUI)/src/textconversions/TextConversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../des(GUI)/src/textconversions/TextConversions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/des(GUI)x.iml" beforeDir="false" afterPath="$PROJECT_DIR$/des(GUI)x.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desfunctions/DesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/desfunctions/DesMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desfunctions/DesMainFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/desfunctions/DesMainFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textconversions/TextConversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textconversions/TextConversions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kotlin/des(GUI)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des(GUI)/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kotlin/des(GUI)/src/main/kotlin/com/example/demo/DESFunctions/DesMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des(GUI)/src/main/kotlin/com/example/demo/DESFunctions/DesMain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kotlin/des(GUI)/src/main/kotlin/com/example/demo/DESFunctions/desMainFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des(GUI)/src/main/kotlin/com/example/demo/DESFunctions/desMainFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kotlin/des(GUI)/src/main/kotlin/com/example/demo/view/DesMainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/des(GUI)/src/main/kotlin/com/example/demo/view/DesMainView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../matlab/des(GUI)/desForm.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../matlab/des(GUI)/desForm.m" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DesForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
-              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="527">
+              <caret line="69" column="94" selection-start-line="69" selection-start-column="94" selection-end-line="69" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="initializer##0;class#DesForm#0" expanded="true" />
@@ -92,20 +69,11 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/textconversions/TextConversions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="16" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/desfunctions/DesMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="82" column="115" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="115" />
+            <state relative-caret-position="2091">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,10 +82,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/desfunctions/DesMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="122" lean-forward="true" selection-start-line="15" selection-start-column="122" selection-end-line="15" selection-end-column="122" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/desfunctions/DesMainFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2601">
-              <caret line="161" column="50" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
+            <state relative-caret-position="680">
+              <caret line="276" column="9" lean-forward="true" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stringmanip/StringManipulations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -149,27 +138,17 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/DesMainFunctions.java" />
         <option value="$PROJECT_DIR$/src/DesMain.java" />
-        <option value="$PROJECT_DIR$/src/desfunctions/DesMainFunctions.java" />
         <option value="$PROJECT_DIR$/src/DesForm.form" />
-        <option value="$PROJECT_DIR$/src/desfunctions/DesMain.java" />
         <option value="$PROJECT_DIR$/src/textconversions/TextConversions.java" />
+        <option value="$PROJECT_DIR$/src/desfunctions/DesMain.java" />
         <option value="$PROJECT_DIR$/src/DesForm.java" />
+        <option value="$PROJECT_DIR$/src/desfunctions/DesMainFunctions.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1292" />
-    <option name="height" value="876" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,19 +174,7 @@
               <item name="des" type="b2602c69:ProjectViewProjectNode" />
               <item name="des(GUI)x" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="desfunctions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="des" type="b2602c69:ProjectViewProjectNode" />
-              <item name="des(GUI)x" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="stringmanip" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="des" type="b2602c69:ProjectViewProjectNode" />
-              <item name="des(GUI)x" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="textconversions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,9 +183,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="169" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -305,20 +278,22 @@
       <workItem from="1561778307779" duration="20940000" />
       <workItem from="1561915807160" duration="4816000" />
       <workItem from="1561933571458" duration="8336000" />
+      <workItem from="1563210724035" duration="5985000" />
+      <workItem from="1563290058327" duration="1797000" />
+      <workItem from="1563553316469" duration="9427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34092000" />
+    <option name="totallyTimeSpent" value="51301000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.22653721" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.47666666" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -329,8 +304,8 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.32949308" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39976957" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.33370045" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.39867842" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -343,7 +318,7 @@
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32928804" />
+      <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32889125" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +327,20 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>outputArrayList.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>outputArrayList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/des(GUI)x/com/intellij/uiDesigner/core/GridLayoutManager.class">
@@ -371,6 +360,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="69" column="94" selection-start-line="69" selection-start-column="94" selection-end-line="69" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#DesForm#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesForm.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/textconversions/TextConversions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desfunctions/DesMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="122" lean-forward="true" selection-start-line="15" selection-start-column="122" selection-end-line="15" selection-end-column="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/stringmanip/StringManipulations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -380,39 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/desfunctions/DesMainFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2601">
-          <caret line="161" column="50" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/desfunctions/DesMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="82" column="115" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="115" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DesForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DesForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#DesForm#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/textconversions/TextConversions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="16" selection-end-column="99" />
+        <state relative-caret-position="680">
+          <caret line="276" column="9" lean-forward="true" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
         </state>
       </provider>
     </entry>

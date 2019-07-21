@@ -11,6 +11,7 @@ import tornadofx.*
 import java.awt.Toolkit
 import java.awt.datatransfer.StringSelection
 import java.lang.StringBuilder
+import java.util.*
 import javax.swing.JOptionPane
 
 class DesMainView : View("DES Encryptor/Decryptor") {
@@ -106,6 +107,8 @@ class DesMainView : View("DES Encryptor/Decryptor") {
             val cipherMode = if (encryptRadioButton!!.isSelected) CipherMode.ENCRYPT else CipherMode.DECRYPT
             val swapLastRound = swapYesRadioButton!!.isSelected
 
+            val startTime = Date()
+
             val inputTextBin = DesMain.encryptDecryptInputTextPrep(inputText, cipherMode, textModeInput)
             val keyTextBin = DesMain.keyTextPrep(inputKey, textModeKey)
 
@@ -125,6 +128,10 @@ class DesMainView : View("DES Encryptor/Decryptor") {
 
             if (outputTextHexStringPair == null || outputTextHexStringPair.first == "")
                 throw Exception("Please enter inputs!")
+
+            val endTime = Date()
+            val timeDiff = (endTime.time - startTime.time) / 1000.0
+            desMainFunctions.debugOutput.append("\nElapsed Time: $timeDiff secs\n\n")
 
             val outputTextHex = outputTextHexStringPair.first
             val outputTextStr = outputTextHexStringPair.second

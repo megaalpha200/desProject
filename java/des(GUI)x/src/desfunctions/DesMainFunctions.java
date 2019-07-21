@@ -148,7 +148,7 @@ public class DesMainFunctions {
 
         int blockNum = 1;
         for (String block : inputTextBinChunked) {
-            debugOutput.append("For block " + blockNum + "..." + System.lineSeparator());
+            debugOutput.append("For block ").append(blockNum).append("...").append(System.lineSeparator());
 
             finalResult.append(desBinEncryptDecrypt(cipherMode, block, roundKeys, swapLastRound));
         }
@@ -161,7 +161,7 @@ public class DesMainFunctions {
 
         String tempRoundInputText = inputTextPostInitPBox;
         for (int round = 0; round < 16; round++) {
-            debugOutput.append("Round " + (round+1) + "..." + System.lineSeparator());
+            debugOutput.append("Round ").append(round + 1).append("...").append(System.lineSeparator());
 
             if ((cipherMode == CipherMode.ENCRYPT && round + 1 == 16) || (cipherMode == CipherMode.DECRYPT && round + 1 == 1))
                 tempRoundInputText = roundFunction(cipherMode, tempRoundInputText, roundKeys.get(round), swapLastRound);
@@ -210,22 +210,17 @@ public class DesMainFunctions {
         }
 
         if (cipherMode == CipherMode.DECRYPT) {
-            final ArrayList<String> tempRoundKeys = new ArrayList<>();
-            final ArrayList<String> reversedRoundKeys = new ArrayList<>();
+            for (int i = 0, j = roundKeys.size() - 1; i < j; i++, j--) {
+                final String firstKey = roundKeys.get(i);
+                final String secondKey = roundKeys.get(j);
 
-            for (String roundKey : roundKeys) {
-                tempRoundKeys.add(roundKey);
+                roundKeys.set(i, secondKey);
+                roundKeys.set(j, firstKey);
             }
-
-            for (int roundKeyIndex = roundKeys.size() - 1; roundKeyIndex >= 0; roundKeyIndex--) {
-                reversedRoundKeys.add(tempRoundKeys.get(roundKeyIndex));
-            }
-
-            roundKeys = reversedRoundKeys;
         }
 
         for (int round = 0; round < 16; round++) {
-            debugOutput.append("Round " + StringManipulations.padLeftWithZeros(String.valueOf(round+1), 2) + " Key: " + String.join(" ", StringManipulations.chunkString(roundKeys.get(round), 6)) + System.lineSeparator());
+            debugOutput.append("Round ").append(StringManipulations.padLeftWithZeros(String.valueOf(round + 1), 2)).append(" Key: ").append(String.join(" ", StringManipulations.chunkString(roundKeys.get(round), 6))).append(System.lineSeparator());
         }
 
         return roundKeys;
@@ -239,7 +234,7 @@ public class DesMainFunctions {
         final String leftInput = input.substring(0, (input.length() / 2));
         final String rightInput = input.substring((input.length() / 2));
 
-        debugOutput.append("Pre-Round Input: " + TextConversions.convertBinToHex(leftInput) + " " + TextConversions.convertBinToHex(rightInput) + System.lineSeparator());
+        debugOutput.append("Pre-Round Input: ").append(TextConversions.convertBinToHex(leftInput)).append(" ").append(TextConversions.convertBinToHex(rightInput)).append(System.lineSeparator());
 
         final String leftOutput;
         final String rightOutput;
@@ -262,9 +257,9 @@ public class DesMainFunctions {
 
     private static String innerRoundFunction(String input, String key) {
         final String expandedInput = applyPBox(input, EXPANSION_P_BOX);
-        debugOutput.append("Expansion Result: " + TextConversions.convertBinToHex(expandedInput) + System.lineSeparator());
+        debugOutput.append("Expansion Result: ").append(TextConversions.convertBinToHex(expandedInput)).append(System.lineSeparator());
         final String inputWithAppliedKey = xorBinaryBlocks(expandedInput, key);
-        debugOutput.append("Applied Key Result: " + TextConversions.convertBinToHex(inputWithAppliedKey) + System.lineSeparator());
+        debugOutput.append("Applied Key Result: ").append(TextConversions.convertBinToHex(inputWithAppliedKey)).append(System.lineSeparator());
         final List<String> chunkedInputWithAppliedKey = StringManipulations.chunkString(inputWithAppliedKey, 6);
 
         final ArrayList<String> postSBoxResults = new ArrayList<>();
@@ -273,8 +268,8 @@ public class DesMainFunctions {
         for (String chunk: chunkedInputWithAppliedKey) {
             final String sBoxResult = applySBox(chunk, S_BOX_GROUP[index]);
 
-            debugOutput.append("S-Box " + (index + 1) + " input: " + chunk + System.lineSeparator());
-            debugOutput.append("S-Box " + (index + 1) + " output: " + sBoxResult + System.lineSeparator());
+            debugOutput.append("S-Box ").append(index + 1).append(" input: ").append(chunk).append(System.lineSeparator());
+            debugOutput.append("S-Box ").append(index + 1).append(" output: ").append(sBoxResult).append(System.lineSeparator());
 
             postSBoxResults.add(sBoxResult);
 
@@ -310,19 +305,10 @@ public class DesMainFunctions {
     }
 
     public static String applyPBox(String input, int[] pBox) {
-        final StringBuilder output = new StringBuilder();
-        final ArrayList<Character> outputArrayList = new ArrayList<>();
-
-        for (int i = 1; i <= pBox.length; i++) {
-            outputArrayList.add('0');
-        }
+        final StringBuilder output = new StringBuilder(StringManipulations.padLeftWithZeros("", pBox.length));
 
         for (int j = 0; j < pBox.length; j++) {
-            outputArrayList.set(j, input.charAt(pBox[j] - 1));
-        }
-
-        for (char c : outputArrayList) {
-            output.append(c);
+            output.setCharAt(j, input.charAt(pBox[j] - 1));
         }
 
         return output.toString();
@@ -337,15 +323,9 @@ public class DesMainFunctions {
 
     public static String shiftBitsLeft(String input, int shiftBy) {
         final int modShiftVal = shiftBy % input.length();
-        final StringBuilder shiftedString = new StringBuilder();
 
-        shiftedString.append(input.substring(modShiftVal));
-
-        for (int i = 0; i <= modShiftVal - 1; i++) {
-            shiftedString.append(input.charAt(i));
-        }
-
-        return shiftedString.toString();
+        return input.substring(modShiftVal) +
+                input.substring(0, modShiftVal);
     }
 
     /*----------------------------------------------------------------------------------*/
