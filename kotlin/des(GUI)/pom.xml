@@ -37,7 +37,6 @@
             <artifactId>commons-codec</artifactId>
             <version>1.9</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -55,7 +54,7 @@
                             <goal>compile</goal>
                         </goals>
                         <configuration>
-                        <jvmTarget>1.8</jvmTarget>
+                            <jvmTarget>1.8</jvmTarget>
                         </configuration>
                     </execution>
                     <execution>
@@ -64,6 +63,30 @@
                         <goals>
                             <goal>test-compile</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>
+                                        com.example.demo.app.DesApp
+                                    </mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

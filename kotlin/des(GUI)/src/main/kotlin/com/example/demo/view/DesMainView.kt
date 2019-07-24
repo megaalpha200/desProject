@@ -130,8 +130,8 @@ class DesMainView : View("DES Encryptor/Decryptor") {
                 throw Exception("Please enter inputs!")
 
             val endTime = Date()
-            val timeDiff = (endTime.time - startTime.time) / 1000.0
-            desMainFunctions.debugOutput.append("\nElapsed Time: $timeDiff secs\n\n")
+            val timeDiff = (endTime.time - startTime.time) + 0.0
+            desMainFunctions.debugOutput.append("\nElapsed Time: $timeDiff milliseconds\n\n")
 
             val outputTextHex = outputTextHexStringPair.first
             val outputTextStr = outputTextHexStringPair.second

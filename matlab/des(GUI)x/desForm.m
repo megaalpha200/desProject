@@ -175,7 +175,7 @@ function executeBtn_Callback(hObject, eventdata, handles)
         
         [inputTextBin, inputTextBinDispStr] = encryptDecryptInputTextPrep(inputText, cipherMode, inputTextMode);
         [keyBin, keyBinDispStr] = keyTextPrep(inputKey, keyTextMode);
-        debugOutputStr = horzcat(debugOutputStr, inputTextBinDispStr, keyBinDispStr);
+        %debugOutputStr = horzcat(debugOutputStr, inputTextBinDispStr, keyBinDispStr);
 
         completionMessage = '';
         outputHexDisp = '';
@@ -203,7 +203,7 @@ function executeBtn_Callback(hObject, eventdata, handles)
         td = milliseconds(td);
         td = num2str(td);
 
-        debugOutputStr = horzcat(debugOutputStr, outputDispStr);
+        %debugOutputStr = horzcat(debugOutputStr, outputDispStr);
         debugOutputStr = horzcat(debugOutputStr, sprintf('\nElapsed Time: %s milliseconds\n\n', td));
         
         set(handles.outputHexEdit, 'String', outputHexDisp);
@@ -212,6 +212,7 @@ function executeBtn_Callback(hObject, eventdata, handles)
         helpdlg(completionMessage, 'Complete!');
     catch exception
         helpdlg(exception.message, 'Error!');
+        %rethrow(exception);
     end
 
 
